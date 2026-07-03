@@ -1,0 +1,58 @@
+---
+---
+
+<script>
+  // ─── Scroll-reveal (Intersection Observer) ───────────────────────────────
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { root: null, rootMargin: '0px 0px -60px 0px', threshold: 0.08 }
+  );
+
+  document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+    revealObserver.observe(el);
+  });
+
+  // ─── Animated counters ───────────────────────────────────────────────────
+  function runCounter(el: HTMLElement) {
+    const target   = parseInt(el.dataset.target  ?? '0', 10);
+    const suffix   = el.dataset.suffix  ?? '';
+    const prefix   = el.dataset.prefix  ?? '';
+    const duration = 1600; // ms
+    const fps      = 60;
+    const steps    = Math.round((duration / 1000) * fps);
+    let   current  = 0;
+
+    const timer = setInterval(() => {
+      current++;
+      const value = Math.round((current / steps) * target);
+      el.textContent = prefix + value.toString() + suffix;
+      if (current >= steps) {
+        clearInterval(timer);
+        el.textContent = prefix + target.toString() + suffix;
+      }
+    }, 1000 / fps);
+  }
+
+  const counterObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          runCounter(entry.target as HTMLElement);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  document.querySelectorAll('[data-target]').forEach((el) => {
+    counterObserver.observe(el);
+  });
+</script>

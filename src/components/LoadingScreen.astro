@@ -1,0 +1,46 @@
+---
+---
+
+<div
+  id="loading-screen"
+  class="fixed inset-0 z-[9999] flex flex-col items-center justify-center"
+  style="background-color: #0f1827;"
+  aria-hidden="true"
+>
+  <!-- Logo + tagline -->
+  <div class="loading-logo text-center px-8">
+    <img
+      src="https://assets.cdn.filesafe.space/jGKx4eTTbP1enXZEBWxm/media/68124cf13176b90a9f675eb4.png"
+      alt="Flex Commercial Services"
+      class="h-20 md:h-28 w-auto mx-auto mb-5"
+    />
+    <p class="text-brand-muted text-xs tracking-[0.25em] uppercase font-medium">
+      Commercial Cleaning Services
+    </p>
+  </div>
+
+  <!-- Animated shine bar -->
+  <div class="loading-shine-bar"></div>
+</div>
+
+<script>
+  const loadingScreen = document.getElementById('loading-screen');
+
+  if (!loadingScreen) {
+    // do nothing
+  } else if (sessionStorage.getItem('flex_loading_shown')) {
+    // Already shown this session — hide immediately, no animation
+    loadingScreen.style.display = 'none';
+  } else {
+    sessionStorage.setItem('flex_loading_shown', '1');
+
+    // Trigger fade-out + slide-up after 2 s
+    setTimeout(() => {
+      loadingScreen.classList.add('fade-out');
+      // Remove from DOM after animation completes (0.4s fade + 0.5s slide = ~1s)
+      setTimeout(() => {
+        loadingScreen.style.display = 'none';
+      }, 1000);
+    }, 2000);
+  }
+</script>

@@ -1,0 +1,259 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import ScrollAnimations from '../components/ScrollAnimations.astro';
+
+const plans = [
+  {
+    name: 'Basic Plan',
+    tag: null,
+    description: 'Our foundational cleaning package, ideal for maintaining a clean and comfortable environment.',
+    items: [
+      'Trash removal and liner replacement',
+      'Vacuuming all carpeted areas',
+      'Sweeping and mopping hard floors',
+      'Surface dusting (desks, counters, shelves)',
+      'Restroom sanitization (toilets, sinks, mirrors)',
+      'Spot cleaning glass doors and windows',
+    ],
+    cta: 'Book This Plan',
+    style: 'standard',
+  },
+  {
+    name: 'Standard (Tailored) Plan',
+    tag: 'Most Popular',
+    description: 'A highly customizable cleaning experience designed around your unique needs — everything in Basic, plus:',
+    items: [
+      'Everything in Basic Plan',
+      'Deep cleaning of restrooms including grout scrubbing',
+      'Kitchen / break room deep clean (appliances, cabinets, sink)',
+      'High dusting (ceiling fans, vents, light fixtures)',
+      'Disinfection of all high-touch surfaces',
+      'Customized cleaning schedule (daily, weekly, bi-weekly)',
+      'Dedicated point of contact for your account',
+    ],
+    cta: 'Book This Plan',
+    style: 'popular',
+  },
+  {
+    name: 'Premium Plan',
+    tag: null,
+    description: 'Our most comprehensive option for businesses that demand excellence — everything in Standard, plus:',
+    items: [
+      'Everything in Standard Plan',
+      'Medical-grade sanitization available',
+      'Post-event cleanup',
+      'Carpet extraction / deep steam cleaning',
+      'Window washing (interior)',
+      'Priority scheduling and same-day response',
+      'Monthly walkthrough inspection with client',
+    ],
+    cta: 'Book This Plan',
+    style: 'premium',
+  },
+];
+
+const verticals = [
+  {
+    title: 'Restaurant',
+    image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800',
+    description: 'Health-code compliant cleaning for kitchens, dining rooms, and restrooms. Daily or nightly service available to keep your facility inspection-ready.',
+  },
+  {
+    title: 'Office',
+    image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800',
+    description: 'Professional cleaning that keeps your workspace presentable and your team productive. Flexible scheduling minimizes disruption.',
+  },
+  {
+    title: 'Fitness Center',
+    image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800',
+    description: 'Equipment disinfection, locker room sanitation, and floor care designed for high-traffic fitness environments.',
+  },
+  {
+    title: 'School / Daycare',
+    image: 'https://images.unsplash.com/photo-1763310225230-6e15b125935a?w=800',
+    description: 'Child-safe products and thorough protocols for classrooms, hallways, bathrooms, and play areas. Supporting healthy learning environments.',
+  },
+  {
+    title: 'Medical',
+    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800',
+    description: 'Medical-grade sanitization protocols for clinics, offices, and facilities that require stringent infection-control standards.',
+  },
+  {
+    title: 'Move-In / Move-Out',
+    image: 'https://images.unsplash.com/photo-1740657254989-42fe9c3b8cce?w=800',
+    description: 'Top-to-bottom cleans that satisfy landlords, pass inspections, and prepare spaces for their next chapter.',
+  },
+];
+---
+
+<Layout
+  title="Commercial Cleaning Services & Plans | Flex Commercial Services"
+  description="Explore Basic, Standard, and Premium commercial cleaning plans from Flex Commercial Services. Serving businesses across Northeast Ohio."
+>
+  <Navbar />
+
+  <!-- ── PAGE HERO ──────────────────────────────────────────────────────── -->
+  <section
+    class="pt-36 pb-20 text-center"
+    style="background: linear-gradient(145deg, #0f1827 0%, #1a2744 50%, #0f1827 100%);"
+  >
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="animate-on-scroll fade-up text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
+        Commercial Cleaning<br />
+        <span class="text-blue-400">Services &amp; Plans</span>
+      </h1>
+      <p class="animate-on-scroll fade-up stagger-1 text-brand-muted text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+        A comprehensive range of cleaning services designed to meet the unique needs of every
+        customer — from routine maintenance to deep-clean transformations.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── PRICING CARDS ──────────────────────────────────────────────────── -->
+  <section class="py-24 bg-brand-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-16">
+        <h2 class="animate-on-scroll fade-up text-3xl md:text-4xl font-black text-white mb-4">
+          Choose Your Plan
+        </h2>
+        <p class="animate-on-scroll fade-up stagger-1 text-brand-muted max-w-xl mx-auto">
+          Every plan is customizable. We'll tailor the details to your space, schedule, and budget
+          during your free consultation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+
+        {plans.map((plan, i) => (
+          <div
+            class={`pricing-card animate-on-scroll scale-in stagger-${i + 1} rounded-2xl p-8 flex flex-col gap-5 relative ${
+              plan.style === 'popular'
+                ? 'bg-brand-accent border-2 border-blue-400 ring-4 ring-blue-500/20'
+                : plan.style === 'premium'
+                ? 'bg-[#0d1626] border border-[#2a3f6a]'
+                : 'bg-brand-navy border border-[#2a3f6a]'
+            }`}
+          >
+            {plan.tag && (
+              <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+                <span class="bg-yellow-400 text-yellow-900 text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg">
+                  {plan.tag}
+                </span>
+              </div>
+            )}
+
+            <div>
+              <h3 class="text-white font-black text-xl mb-2">{plan.name}</h3>
+              <p class={`text-sm leading-relaxed ${plan.style === 'popular' ? 'text-blue-100' : 'text-brand-muted'}`}>
+                {plan.description}
+              </p>
+            </div>
+
+            <ul class="flex flex-col gap-3 flex-grow">
+              {plan.items.map(item => (
+                <li class={`flex items-start gap-3 text-sm leading-relaxed ${plan.style === 'popular' ? 'text-blue-50' : 'text-gray-300'}`}>
+                  <svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href="/booking"
+              class={`text-center font-bold py-3 px-6 rounded-lg transition-colors duration-200 ${
+                plan.style === 'popular'
+                  ? 'bg-white text-blue-600 hover:bg-blue-50'
+                  : plan.style === 'premium'
+                  ? 'bg-brand-accent text-white hover:bg-blue-700'
+                  : 'bg-brand-accent text-white hover:bg-blue-700'
+              }`}
+            >
+              {plan.cta}
+            </a>
+          </div>
+        ))}
+
+      </div>
+
+      <p class="animate-on-scroll fade-up text-center text-brand-muted text-sm mt-10">
+        Not sure which plan is right for you? <a href="/booking" class="text-blue-400 hover:text-blue-300 font-semibold">Get a free consultation →</a>
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ── SERVICE VERTICALS ──────────────────────────────────────────────── -->
+  <section class="py-24 bg-brand-navy">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-16">
+        <h2 class="animate-on-scroll fade-up text-3xl md:text-4xl font-black text-white mb-4">
+          Industries We Serve
+        </h2>
+        <p class="animate-on-scroll fade-up stagger-1 text-brand-muted max-w-xl mx-auto">
+          Specialized protocols for every business type, all backed by Flex's commitment to detail.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {verticals.map((v, i) => (
+          <div
+            class={`vertical-card animate-on-scroll scale-in stagger-${(i % 6) + 1} relative rounded-2xl overflow-hidden p-7`}
+            style="min-height: 280px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"
+          >
+            <img
+              src={v.image}
+              alt={v.title}
+              class="absolute inset-0 w-full h-full object-cover object-center"
+              style="z-index: 0;"
+              loading="lazy"
+            />
+
+            <!-- Dark navy overlay -->
+            <div
+              class="absolute inset-0"
+              style="background: rgba(10, 20, 50, 0.75); z-index: 1;"
+            ></div>
+
+            <div
+              class="relative flex flex-col"
+              style="z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; height: 100%; padding: 1.5rem;"
+            >
+              <h3 class="text-white font-black text-2xl md:text-3xl" style="text-align: center;">{v.title}</h3>
+              <p class="text-white text-sm leading-relaxed" style="text-align: center; margin-top: 0.75rem;">{v.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────────────────────────── -->
+  <section class="py-20 bg-brand-accent">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="animate-on-scroll fade-up text-3xl md:text-4xl font-black text-white mb-4">
+        Get a Custom Quote Today
+      </h2>
+      <p class="animate-on-scroll fade-up stagger-1 text-blue-100 mb-8">
+        Call <a href="tel:2168019686" class="font-bold underline underline-offset-4 hover:text-white">(216)-801-9686</a> or fill out our form — we'll respond within 24 hours.
+      </p>
+      <div class="animate-on-scroll fade-up stagger-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/booking" class="bg-white text-blue-600 font-bold px-9 py-4 rounded-lg hover:bg-blue-50 transition-colors">
+          Book a Quote
+        </a>
+        <a href="/faq" class="btn-outline border-white/70">
+          Read Our FAQ
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+  <ScrollAnimations />
+</Layout>

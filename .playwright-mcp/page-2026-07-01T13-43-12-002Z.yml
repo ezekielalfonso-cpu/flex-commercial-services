@@ -1,0 +1,210 @@
+- generic [active] [ref=f15e1]:
+  - navigation [ref=f15e2]:
+    - generic [ref=f15e4]:
+      - link "Flex Commercial Services" [ref=f15e5] [cursor=pointer]:
+        - /url: /
+        - img "Flex Commercial Services" [ref=f15e6]
+      - generic [ref=f15e7]:
+        - link "Home" [ref=f15e8] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f15e9] [cursor=pointer]:
+          - /url: /about
+        - link "Services" [ref=f15e10] [cursor=pointer]:
+          - /url: /services
+        - link "Booking" [ref=f15e11] [cursor=pointer]:
+          - /url: /booking
+        - link "FAQ" [ref=f15e12] [cursor=pointer]:
+          - /url: /faq
+      - link "(216)-801-9686" [ref=f15e14] [cursor=pointer]:
+        - /url: tel:2168019686
+  - generic [ref=f15e16]:
+    - heading "Commercial Cleaning Services & Plans" [level=1] [ref=f15e17]:
+      - text: Commercial Cleaning
+      - text: Services & Plans
+    - paragraph [ref=f15e18]: A comprehensive range of cleaning services designed to meet the unique needs of every customer — from routine maintenance to deep-clean transformations.
+  - generic [ref=f15e20]:
+    - generic [ref=f15e21]:
+      - heading "Choose Your Plan" [level=2] [ref=f15e22]
+      - paragraph [ref=f15e23]: Every plan is customizable. We'll tailor the details to your space, schedule, and budget during your free consultation.
+    - generic [ref=f15e24]:
+      - generic [ref=f15e25]:
+        - generic [ref=f15e26]:
+          - heading "Basic Plan" [level=3] [ref=f15e27]
+          - paragraph [ref=f15e28]: Our foundational cleaning package, ideal for maintaining a clean and comfortable environment.
+        - list [ref=f15e29]:
+          - listitem [ref=f15e30]:
+            - img [ref=f15e31]
+            - text: Trash removal and liner replacement
+          - listitem [ref=f15e33]:
+            - img [ref=f15e34]
+            - text: Vacuuming all carpeted areas
+          - listitem [ref=f15e36]:
+            - img [ref=f15e37]
+            - text: Sweeping and mopping hard floors
+          - listitem [ref=f15e39]:
+            - img [ref=f15e40]
+            - text: Surface dusting (desks, counters, shelves)
+          - listitem [ref=f15e42]:
+            - img [ref=f15e43]
+            - text: Restroom sanitization (toilets, sinks, mirrors)
+          - listitem [ref=f15e45]:
+            - img [ref=f15e46]
+            - text: Spot cleaning glass doors and windows
+        - link "Book This Plan" [ref=f15e48] [cursor=pointer]:
+          - /url: /booking
+      - generic [ref=f15e49]:
+        - generic [ref=f15e50]: Most Popular
+        - generic [ref=f15e51]:
+          - heading "Standard (Tailored) Plan" [level=3] [ref=f15e52]
+          - paragraph [ref=f15e53]: "A highly customizable cleaning experience designed around your unique needs — everything in Basic, plus:"
+        - list [ref=f15e54]:
+          - listitem [ref=f15e55]:
+            - img [ref=f15e56]
+            - text: Everything in Basic Plan
+          - listitem [ref=f15e58]:
+            - img [ref=f15e59]
+            - text: Deep cleaning of restrooms including grout scrubbing
+          - listitem [ref=f15e61]:
+            - img [ref=f15e62]
+            - text: Kitchen / break room deep clean (appliances, cabinets, sink)
+          - listitem [ref=f15e64]:
+            - img [ref=f15e65]
+            - text: High dusting (ceiling fans, vents, light fixtures)
+          - listitem [ref=f15e67]:
+            - img [ref=f15e68]
+            - text: Disinfection of all high-touch surfaces
+          - listitem [ref=f15e70]:
+            - img [ref=f15e71]
+            - text: Customized cleaning schedule (daily, weekly, bi-weekly)
+          - listitem [ref=f15e73]:
+            - img [ref=f15e74]
+            - text: Dedicated point of contact for your account
+        - link "Book This Plan" [ref=f15e76] [cursor=pointer]:
+          - /url: /booking
+      - generic [ref=f15e77]:
+        - generic [ref=f15e78]:
+          - heading "Premium Plan" [level=3] [ref=f15e79]
+          - paragraph [ref=f15e80]: "Our most comprehensive option for businesses that demand excellence — everything in Standard, plus:"
+        - list [ref=f15e81]:
+          - listitem [ref=f15e82]:
+            - img [ref=f15e83]
+            - text: Everything in Standard Plan
+          - listitem [ref=f15e85]:
+            - img [ref=f15e86]
+            - text: Medical-grade sanitization available
+          - listitem [ref=f15e88]:
+            - img [ref=f15e89]
+            - text: Post-event cleanup
+          - listitem [ref=f15e91]:
+            - img [ref=f15e92]
+            - text: Carpet extraction / deep steam cleaning
+          - listitem [ref=f15e94]:
+            - img [ref=f15e95]
+            - text: Window washing (interior)
+          - listitem [ref=f15e97]:
+            - img [ref=f15e98]
+            - text: Priority scheduling and same-day response
+          - listitem [ref=f15e100]:
+            - img [ref=f15e101]
+            - text: Monthly walkthrough inspection with client
+        - link "Book This Plan" [ref=f15e103] [cursor=pointer]:
+          - /url: /booking
+    - paragraph [ref=f15e104]:
+      - text: Not sure which plan is right for you?
+      - link "Get a free consultation →" [ref=f15e105] [cursor=pointer]:
+        - /url: /booking
+  - generic [ref=f15e107]:
+    - generic [ref=f15e108]:
+      - heading "Industries We Serve" [level=2] [ref=f15e109]
+      - paragraph [ref=f15e110]: Specialized protocols for every business type, all backed by Flex's commitment to detail.
+    - generic [ref=f15e111]:
+      - generic [ref=f15e112]:
+        - generic [ref=f15e113]: 🍽️
+        - heading "Restaurant" [level=3] [ref=f15e114]
+        - paragraph [ref=f15e115]: Health-code compliant cleaning for kitchens, dining rooms, and restrooms. Daily or nightly service available to keep your facility inspection-ready.
+      - generic [ref=f15e116]:
+        - generic [ref=f15e117]: 🏢
+        - heading "Office" [level=3] [ref=f15e118]
+        - paragraph [ref=f15e119]: Professional cleaning that keeps your workspace presentable and your team productive. Flexible scheduling minimizes disruption.
+      - generic [ref=f15e120]:
+        - generic [ref=f15e121]: 💪
+        - heading "Fitness Center" [level=3] [ref=f15e122]
+        - paragraph [ref=f15e123]: Equipment disinfection, locker room sanitation, and floor care designed for high-traffic fitness environments.
+      - generic [ref=f15e124]:
+        - generic [ref=f15e125]: 🏫
+        - heading "School / Daycare" [level=3] [ref=f15e126]
+        - paragraph [ref=f15e127]: Child-safe products and thorough protocols for classrooms, hallways, bathrooms, and play areas. Supporting healthy learning environments.
+      - generic [ref=f15e128]:
+        - generic [ref=f15e129]: 🏥
+        - heading "Medical" [level=3] [ref=f15e130]
+        - paragraph [ref=f15e131]: Medical-grade sanitization protocols for clinics, offices, and facilities that require stringent infection-control standards.
+      - generic [ref=f15e132]:
+        - generic [ref=f15e133]: 📦
+        - heading "Move-In / Move-Out" [level=3] [ref=f15e134]
+        - paragraph [ref=f15e135]: Top-to-bottom cleans that satisfy landlords, pass inspections, and prepare spaces for their next chapter.
+  - generic [ref=f15e137]:
+    - heading "Get a Custom Quote Today" [level=2] [ref=f15e138]
+    - paragraph [ref=f15e139]:
+      - text: Call
+      - link "(216)-801-9686" [ref=f15e140] [cursor=pointer]:
+        - /url: tel:2168019686
+      - text: or fill out our form — we'll respond within 24 hours.
+    - generic [ref=f15e141]:
+      - link "Book a Quote" [ref=f15e142] [cursor=pointer]:
+        - /url: /booking
+      - link "Read Our FAQ" [ref=f15e143] [cursor=pointer]:
+        - /url: /faq
+  - contentinfo [ref=f15e144]:
+    - generic [ref=f15e145]:
+      - generic [ref=f15e146]:
+        - img "Flex Commercial Services" [ref=f15e147]
+        - paragraph [ref=f15e148]: Cleveland's trusted commercial cleaning experts — delivering spotless results across Northeast Ohio.
+      - generic [ref=f15e149]:
+        - generic [ref=f15e150]:
+          - heading "Quick Links" [level=3] [ref=f15e151]
+          - list [ref=f15e152]:
+            - listitem [ref=f15e153]:
+              - link "Home" [ref=f15e154] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f15e155]:
+              - link "About" [ref=f15e156] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f15e157]:
+              - link "Services" [ref=f15e158] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=f15e159]:
+              - link "Booking" [ref=f15e160] [cursor=pointer]:
+                - /url: /booking
+            - listitem [ref=f15e161]:
+              - link "FAQ" [ref=f15e162] [cursor=pointer]:
+                - /url: /faq
+        - generic [ref=f15e163]:
+          - heading "Contact Us" [level=3] [ref=f15e164]
+          - list [ref=f15e165]:
+            - listitem [ref=f15e166]: Cleveland, OH 44101
+            - listitem [ref=f15e167]:
+              - link "(216)-801-9686" [ref=f15e168] [cursor=pointer]:
+                - /url: tel:2168019686
+            - listitem [ref=f15e169]:
+              - link "info@flexcommercialservices.com" [ref=f15e170] [cursor=pointer]:
+                - /url: mailto:info@flexcommercialservices.com
+        - generic [ref=f15e171]:
+          - heading "Follow Us" [level=3] [ref=f15e172]
+          - link "@teamflexservices" [ref=f15e173] [cursor=pointer]:
+            - /url: https://www.instagram.com/teamflexservices
+            - img [ref=f15e174]
+            - text: "@teamflexservices"
+      - paragraph [ref=f15e177]: © Flex Commercial Services 2025. All Rights Reserved.
+  - generic [ref=f15e180]:
+    - button "Menu" [ref=f15e181]:
+      - img [ref=f15e183]
+      - generic: Menu
+    - button "Inspect" [ref=f15e187]:
+      - img [ref=f15e189]
+      - generic: Inspect
+    - button "Audit" [ref=f15e191]:
+      - img [ref=f15e193]
+      - generic: Audit
+    - button "Settings" [ref=f15e196]:
+      - img [ref=f15e198]
+      - generic: Settings

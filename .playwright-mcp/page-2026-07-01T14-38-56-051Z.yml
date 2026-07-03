@@ -1,0 +1,154 @@
+- generic [active] [ref=f29e1]:
+  - navigation [ref=f29e2]:
+    - generic [ref=f29e4]:
+      - link "Flex Commercial Services" [ref=f29e5] [cursor=pointer]:
+        - /url: /
+        - img "Flex Commercial Services" [ref=f29e6]
+      - generic [ref=f29e7]:
+        - link "Home" [ref=f29e8] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f29e9] [cursor=pointer]:
+          - /url: /about
+        - link "Services" [ref=f29e10] [cursor=pointer]:
+          - /url: /services
+        - link "Booking" [ref=f29e11] [cursor=pointer]:
+          - /url: /booking
+        - link "FAQ" [ref=f29e12] [cursor=pointer]:
+          - /url: /faq
+      - link "(216)-801-9686" [ref=f29e14] [cursor=pointer]:
+        - /url: tel:2168019686
+  - generic [ref=f29e16]:
+    - heading "Book Commercial Cleaning in Cleveland, OH" [level=1] [ref=f29e17]:
+      - text: Book Commercial Cleaning
+      - text: in Cleveland, OH
+    - paragraph [ref=f29e18]: Embrace the simplicity of a clean, organized space without lifting a finger.
+    - paragraph [ref=f29e19]: Booking is easy, efficient, and tailored to fit your schedule and needs. Start your journey to a pristine space today — just a few steps away!
+  - generic [ref=f29e22]:
+    - generic [ref=f29e24]:
+      - heading "Get Your Free Quote" [level=2] [ref=f29e25]
+      - paragraph [ref=f29e26]:
+        - text: Fill out the form to receive a
+        - strong [ref=f29e27]: free
+        - text: personalized quote. We'll respond within 24 hours.
+      - generic [ref=f29e28]:
+        - generic [ref=f29e29]:
+          - generic [ref=f29e30]:
+            - generic [ref=f29e31]: First Name *
+            - textbox "First Name *" [ref=f29e32]:
+              - /placeholder: Jane
+          - generic [ref=f29e33]:
+            - generic [ref=f29e34]: Last Name *
+            - textbox "Last Name *" [ref=f29e35]:
+              - /placeholder: Smith
+        - generic [ref=f29e36]:
+          - generic [ref=f29e37]: Email Address *
+          - textbox "Email Address *" [ref=f29e38]:
+            - /placeholder: jane@yourbusiness.com
+        - generic [ref=f29e39]:
+          - generic [ref=f29e40]: Phone Number *
+          - textbox "Phone Number *" [ref=f29e41]:
+            - /placeholder: (216) 555-0100
+        - generic [ref=f29e42]:
+          - generic [ref=f29e43]: Business Name
+          - textbox "Business Name" [ref=f29e44]:
+            - /placeholder: Your Business LLC
+        - generic [ref=f29e45]:
+          - generic [ref=f29e46]: Service Type
+          - combobox "Service Type" [ref=f29e47]:
+            - option "Select a service..." [selected]
+            - option "Restaurant Cleaning"
+            - option "Office Cleaning"
+            - option "Fitness Center Cleaning"
+            - option "School / Daycare Cleaning"
+            - option "Medical Facility Cleaning"
+            - option "Move-In / Move-Out Cleaning"
+            - option "Other"
+        - generic [ref=f29e48]:
+          - generic [ref=f29e49]: Tell Us About Your Space
+          - textbox "Tell Us About Your Space" [ref=f29e50]:
+            - /placeholder: Square footage, frequency, any special requirements...
+        - button "Send My Free Quote Request" [ref=f29e51] [cursor=pointer]
+        - paragraph [ref=f29e52]: By submitting you agree to be contacted by Flex Commercial Services regarding your cleaning inquiry.
+    - generic [ref=f29e53]:
+      - generic [ref=f29e54]:
+        - heading "Let's Get Connected" [level=2] [ref=f29e55]
+        - generic [ref=f29e56]:
+          - link "Call Us (216)-801-9686" [ref=f29e57] [cursor=pointer]:
+            - /url: tel:2168019686
+            - img [ref=f29e59]
+            - generic [ref=f29e61]:
+              - paragraph [ref=f29e62]: Call Us
+              - paragraph [ref=f29e63]: (216)-801-9686
+          - link "Email Us info@flexcommercialservices.com" [ref=f29e64] [cursor=pointer]:
+            - /url: mailto:info@flexcommercialservices.com
+            - img [ref=f29e66]
+            - generic [ref=f29e68]:
+              - paragraph [ref=f29e69]: Email Us
+              - paragraph [ref=f29e70]: info@flexcommercialservices.com
+          - generic [ref=f29e71]:
+            - img [ref=f29e73]
+            - generic [ref=f29e76]:
+              - paragraph [ref=f29e77]: Service Area
+              - paragraph [ref=f29e78]: Cleveland, OH & Northeast Ohio
+      - generic [ref=f29e79]:
+        - heading "Why Flex?" [level=3] [ref=f29e80]
+        - list [ref=f29e81]:
+          - listitem [ref=f29e82]:
+            - img [ref=f29e83]
+            - generic [ref=f29e85]: Free, no-obligation quote within 24 hours
+          - listitem [ref=f29e86]:
+            - img [ref=f29e87]
+            - generic [ref=f29e89]: Fully insured and bonded for your protection
+          - listitem [ref=f29e90]:
+            - img [ref=f29e91]
+            - generic [ref=f29e93]: Month-to-month or contract pricing — your choice
+          - listitem [ref=f29e94]:
+            - img [ref=f29e95]
+            - generic [ref=f29e97]: Professional-grade equipment & supplies provided
+          - listitem [ref=f29e98]:
+            - img [ref=f29e99]
+            - generic [ref=f29e101]: Dedicated point of contact for every account
+          - listitem [ref=f29e102]:
+            - img [ref=f29e103]
+            - generic [ref=f29e105]: Serving Cleveland and Northeast Ohio since day one
+  - contentinfo [ref=f29e106]:
+    - generic [ref=f29e107]:
+      - generic [ref=f29e108]:
+        - img "Flex Commercial Services" [ref=f29e109]
+        - paragraph [ref=f29e110]: Cleveland's trusted commercial cleaning experts — delivering spotless results across Northeast Ohio.
+      - generic [ref=f29e111]:
+        - generic [ref=f29e112]:
+          - heading "Quick Links" [level=3] [ref=f29e113]
+          - list [ref=f29e114]:
+            - listitem [ref=f29e115]:
+              - link "Home" [ref=f29e116] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f29e117]:
+              - link "About" [ref=f29e118] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f29e119]:
+              - link "Services" [ref=f29e120] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=f29e121]:
+              - link "Booking" [ref=f29e122] [cursor=pointer]:
+                - /url: /booking
+            - listitem [ref=f29e123]:
+              - link "FAQ" [ref=f29e124] [cursor=pointer]:
+                - /url: /faq
+        - generic [ref=f29e125]:
+          - heading "Contact Us" [level=3] [ref=f29e126]
+          - list [ref=f29e127]:
+            - listitem [ref=f29e128]: Cleveland, OH 44101
+            - listitem [ref=f29e129]:
+              - link "(216)-801-9686" [ref=f29e130] [cursor=pointer]:
+                - /url: tel:2168019686
+            - listitem [ref=f29e131]:
+              - link "info@flexcommercialservices.com" [ref=f29e132] [cursor=pointer]:
+                - /url: mailto:info@flexcommercialservices.com
+        - generic [ref=f29e133]:
+          - heading "Follow Us" [level=3] [ref=f29e134]
+          - link "@teamflexservices" [ref=f29e135] [cursor=pointer]:
+            - /url: https://www.instagram.com/teamflexservices
+            - img [ref=f29e136]
+            - text: "@teamflexservices"
+      - paragraph [ref=f29e139]: © Flex Commercial Services 2025. All Rights Reserved.

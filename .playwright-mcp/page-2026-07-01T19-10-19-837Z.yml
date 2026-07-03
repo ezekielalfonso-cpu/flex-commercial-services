@@ -1,0 +1,238 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e3]:
+    - img [ref=f2e4]
+    - paragraph [ref=f2e5]: Commercial Cleaning Services
+  - navigation [ref=f2e7]:
+    - generic [ref=f2e9]:
+      - link "Flex Commercial Services" [ref=f2e10] [cursor=pointer]:
+        - /url: /
+        - img "Flex Commercial Services" [ref=f2e11]
+      - generic [ref=f2e12]:
+        - link "Home" [ref=f2e13] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f2e14] [cursor=pointer]:
+          - /url: /about
+        - link "Services" [ref=f2e15] [cursor=pointer]:
+          - /url: /services
+        - link "Booking" [ref=f2e16] [cursor=pointer]:
+          - /url: /booking
+        - link "FAQ" [ref=f2e17] [cursor=pointer]:
+          - /url: /faq
+      - link "(216)-801-9686" [ref=f2e19] [cursor=pointer]:
+        - /url: tel:2168019686
+  - generic [ref=f2e20]:
+    - img "Professional commercial cleaning in Cleveland OH" [ref=f2e22]
+    - generic [ref=f2e24]:
+      - heading "Spotless Spaces, Superior Service" [level=1] [ref=f2e25]:
+        - generic [ref=f2e26]: Spotless
+        - generic [ref=f2e27]: Spaces,
+        - generic [ref=f2e28]: Superior
+        - generic [ref=f2e29]: Service
+      - paragraph [ref=f2e30]: Cleaning services you can see and feel
+      - paragraph [ref=f2e31]: Your business space is more than just a building — it's a reflection of your professionalism. Flex Commercial Services brings top-tier commercial cleaning to Cleveland and all of Northeast Ohio.
+      - generic [ref=f2e32]:
+        - link "Get a Free Quote" [ref=f2e33] [cursor=pointer]:
+          - /url: /booking
+        - link "See Our Services" [ref=f2e34] [cursor=pointer]:
+          - /url: /services
+      - link "(216)-801-9686" [ref=f2e36] [cursor=pointer]:
+        - /url: tel:2168019686
+        - img [ref=f2e37]
+        - text: (216)-801-9686
+    - img [ref=f2e40]
+  - generic [ref=f2e43]:
+    - generic [ref=f2e44]:
+      - heading "What We Offer" [level=2] [ref=f2e45]
+      - paragraph [ref=f2e46]: Comprehensive cleaning solutions tailored to your industry, designed to protect your reputation and keep your team productive.
+    - generic [ref=f2e47]:
+      - generic [ref=f2e48]:
+        - generic [ref=f2e49]:
+          - img "Restaurant Cleaning" [ref=f2e50]
+          - heading "Restaurant Cleaning" [level=3] [ref=f2e53]
+        - generic [ref=f2e54]:
+          - link "Service Details →" [ref=f2e55] [cursor=pointer]:
+            - /url: /services
+          - link "Book a Service →" [ref=f2e56] [cursor=pointer]:
+            - /url: /booking
+      - generic [ref=f2e57]:
+        - generic [ref=f2e58]:
+          - img "Office Cleaning" [ref=f2e59]
+          - heading "Office Cleaning" [level=3] [ref=f2e62]
+        - generic [ref=f2e63]:
+          - link "Service Details →" [ref=f2e64] [cursor=pointer]:
+            - /url: /services
+          - link "Book a Service →" [ref=f2e65] [cursor=pointer]:
+            - /url: /booking
+      - generic [ref=f2e66]:
+        - generic [ref=f2e67]:
+          - img "Fitness Center Cleaning" [ref=f2e68]
+          - heading "Fitness Center Cleaning" [level=3] [ref=f2e71]
+        - generic [ref=f2e72]:
+          - link "Service Details →" [ref=f2e73] [cursor=pointer]:
+            - /url: /services
+          - link "Book a Service →" [ref=f2e74] [cursor=pointer]:
+            - /url: /booking
+      - generic [ref=f2e75]:
+        - generic [ref=f2e76]:
+          - img "School / Daycare Cleaning" [ref=f2e77]
+          - heading "School / Daycare Cleaning" [level=3] [ref=f2e80]
+        - generic [ref=f2e81]:
+          - link "Service Details →" [ref=f2e82] [cursor=pointer]:
+            - /url: /services
+          - link "Book a Service →" [ref=f2e83] [cursor=pointer]:
+            - /url: /booking
+      - generic [ref=f2e84]:
+        - generic [ref=f2e85]:
+          - img "Move-In / Move-Out Cleaning" [ref=f2e86]
+          - heading "Move-In / Move-Out Cleaning" [level=3] [ref=f2e89]
+        - generic [ref=f2e90]:
+          - link "Service Details →" [ref=f2e91] [cursor=pointer]:
+            - /url: /services
+          - link "Book a Service →" [ref=f2e92] [cursor=pointer]:
+            - /url: /booking
+      - generic [ref=f2e93]:
+        - generic [ref=f2e94]:
+          - img "And Much More" [ref=f2e95]
+          - heading "And Much More" [level=3] [ref=f2e98]
+        - generic [ref=f2e99]:
+          - link "Service Details →" [ref=f2e100] [cursor=pointer]:
+            - /url: /services
+          - link "Book a Service →" [ref=f2e101] [cursor=pointer]:
+            - /url: /booking
+    - generic [ref=f2e102]:
+      - link "Service Details" [ref=f2e103] [cursor=pointer]:
+        - /url: /services
+      - link "Book a Service" [ref=f2e104] [cursor=pointer]:
+        - /url: /booking
+  - generic [ref=f2e107]:
+    - generic [ref=f2e108]:
+      - generic [ref=f2e109]: About Flex
+      - heading "Cleaning You Can Trust, Results You'll Love" [level=2] [ref=f2e110]:
+        - text: Cleaning You Can Trust,
+        - text: Results You'll Love
+      - paragraph [ref=f2e111]: Your business space is more than just a building — it's a reflection of your professionalism. Flex Commercial Services brings top-tier commercial cleaning to Cleveland and all of Northeast Ohio.
+      - paragraph [ref=f2e112]: Founded by David George and Riley Hinkel, Flex was built by people who have done this work themselves — not a franchise operation. Every job gets that same personal attention to detail.
+      - link "Meet the Team" [ref=f2e114] [cursor=pointer]:
+        - /url: /about
+    - generic [ref=f2e115]:
+      - generic [ref=f2e116]:
+        - generic [ref=f2e117]: 🤝
+        - generic [ref=f2e118]:
+          - paragraph [ref=f2e119]: 0+
+          - paragraph [ref=f2e120]: Clients Served
+      - generic [ref=f2e121]:
+        - generic [ref=f2e122]: ⭐
+        - generic [ref=f2e123]:
+          - paragraph [ref=f2e124]: 0★
+          - paragraph [ref=f2e125]: Average Rating
+      - generic [ref=f2e126]:
+        - generic [ref=f2e127]: 📅
+        - generic [ref=f2e128]:
+          - paragraph [ref=f2e129]: 0+
+          - paragraph [ref=f2e130]: Years Experience
+  - generic [ref=f2e132]:
+    - generic [ref=f2e133]:
+      - heading "A Proud Member Of The Flex Family" [level=2] [ref=f2e134]
+      - paragraph [ref=f2e135]: Hear from the businesses we've transformed across Northeast Ohio.
+    - generic [ref=f2e136]:
+      - generic [ref=f2e137]:
+        - generic: "\""
+        - generic "5 out of 5 stars" [ref=f2e138]:
+          - img [ref=f2e139]
+          - img [ref=f2e141]
+          - img [ref=f2e143]
+          - img [ref=f2e145]
+          - img [ref=f2e147]
+        - paragraph [ref=f2e149]: "\"Our office has never looked better! Flex's team delivered impeccable service and transformed our workspace into a productive haven.\""
+        - generic [ref=f2e150]:
+          - paragraph [ref=f2e151]: — Ashley B.
+          - paragraph [ref=f2e152]: Office Manager, Downtown Cleveland
+      - generic [ref=f2e153]:
+        - generic: "\""
+        - generic "5 out of 5 stars" [ref=f2e154]:
+          - img [ref=f2e155]
+          - img [ref=f2e157]
+          - img [ref=f2e159]
+          - img [ref=f2e161]
+          - img [ref=f2e163]
+        - paragraph [ref=f2e165]: "\"Flex's team delivered impeccable service and transformed our workspace into a productive haven. I wouldn't trust anyone else with our facility.\""
+        - generic [ref=f2e166]:
+          - paragraph [ref=f2e167]: — Rick W.
+          - paragraph [ref=f2e168]: Facilities Director, Northeast Ohio
+      - generic [ref=f2e169]:
+        - generic: "\""
+        - generic "5 out of 5 stars" [ref=f2e170]:
+          - img [ref=f2e171]
+          - img [ref=f2e173]
+          - img [ref=f2e175]
+          - img [ref=f2e177]
+          - img [ref=f2e179]
+        - paragraph [ref=f2e181]: "\"Consistent, professional, and thorough every single visit. Our restaurant passes every health inspection since we switched to Flex Commercial Services.\""
+        - generic [ref=f2e182]:
+          - paragraph [ref=f2e183]: — Maria S.
+          - paragraph [ref=f2e184]: Restaurant Owner, Lakewood OH
+      - generic [ref=f2e185]:
+        - generic: "\""
+        - generic "5 out of 5 stars" [ref=f2e186]:
+          - img [ref=f2e187]
+          - img [ref=f2e189]
+          - img [ref=f2e191]
+          - img [ref=f2e193]
+          - img [ref=f2e195]
+        - paragraph [ref=f2e197]: "\"They arrived on time, worked quietly while we were open, and left the place absolutely spotless. Highly recommend to any business owner in Cleveland.\""
+        - generic [ref=f2e198]:
+          - paragraph [ref=f2e199]: — James T.
+          - paragraph [ref=f2e200]: Gym Owner, Parma OH
+  - generic [ref=f2e202]:
+    - heading "Ready for a Spotless Space?" [level=2] [ref=f2e203]
+    - paragraph [ref=f2e204]:
+      - text: Call us at
+      - link "(216)-801-9686" [ref=f2e205] [cursor=pointer]:
+        - /url: tel:2168019686
+      - text: or get your free quote online today.
+    - generic [ref=f2e206]:
+      - link "Get a Free Quote" [ref=f2e207] [cursor=pointer]:
+        - /url: /booking
+      - link "View All Services" [ref=f2e208] [cursor=pointer]:
+        - /url: /services
+  - contentinfo [ref=f2e209]:
+    - generic [ref=f2e210]:
+      - generic [ref=f2e211]:
+        - img "Flex Commercial Services" [ref=f2e212]
+        - paragraph [ref=f2e213]: Cleveland's trusted commercial cleaning experts — delivering spotless results across Northeast Ohio.
+      - generic [ref=f2e214]:
+        - generic [ref=f2e215]:
+          - heading "Quick Links" [level=3] [ref=f2e216]
+          - list [ref=f2e217]:
+            - listitem [ref=f2e218]:
+              - link "Home" [ref=f2e219] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f2e220]:
+              - link "About" [ref=f2e221] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f2e222]:
+              - link "Services" [ref=f2e223] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=f2e224]:
+              - link "Booking" [ref=f2e225] [cursor=pointer]:
+                - /url: /booking
+            - listitem [ref=f2e226]:
+              - link "FAQ" [ref=f2e227] [cursor=pointer]:
+                - /url: /faq
+        - generic [ref=f2e228]:
+          - heading "Contact Us" [level=3] [ref=f2e229]
+          - list [ref=f2e230]:
+            - listitem [ref=f2e231]: Cleveland, OH 44101
+            - listitem [ref=f2e232]:
+              - link "(216)-801-9686" [ref=f2e233] [cursor=pointer]:
+                - /url: tel:2168019686
+            - listitem [ref=f2e234]:
+              - link "info@flexcommercialservices.com" [ref=f2e235] [cursor=pointer]:
+                - /url: mailto:info@flexcommercialservices.com
+        - generic [ref=f2e236]:
+          - heading "Follow Us" [level=3] [ref=f2e237]
+          - link "@teamflexservices" [ref=f2e238] [cursor=pointer]:
+            - /url: https://www.instagram.com/teamflexservices
+            - img [ref=f2e239]
+            - text: "@teamflexservices"
+      - paragraph [ref=f2e242]: © Flex Commercial Services 2025. All Rights Reserved.

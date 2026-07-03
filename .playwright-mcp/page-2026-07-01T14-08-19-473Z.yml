@@ -1,0 +1,142 @@
+- generic [active] [ref=f24e1]:
+  - navigation [ref=f24e2]:
+    - generic [ref=f24e4]:
+      - link "Flex Commercial Services" [ref=f24e5] [cursor=pointer]:
+        - /url: /
+        - img "Flex Commercial Services" [ref=f24e6]
+      - generic [ref=f24e7]:
+        - link "Home" [ref=f24e8] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=f24e9] [cursor=pointer]:
+          - /url: /about
+        - link "Services" [ref=f24e10] [cursor=pointer]:
+          - /url: /services
+        - link "Booking" [ref=f24e11] [cursor=pointer]:
+          - /url: /booking
+        - link "FAQ" [ref=f24e12] [cursor=pointer]:
+          - /url: /faq
+      - link "(216)-801-9686" [ref=f24e14] [cursor=pointer]:
+        - /url: tel:2168019686
+  - generic [ref=f24e16]:
+    - heading "Frequently Asked Questions" [level=1] [ref=f24e17]:
+      - text: Frequently Asked
+      - text: Questions
+    - paragraph [ref=f24e18]:
+      - text: Everything you need to know about working with Flex Commercial Services. Can't find your answer? Call us at
+      - link "(216)-801-9686" [ref=f24e19] [cursor=pointer]:
+        - /url: tel:2168019686
+  - generic [ref=f24e22]:
+    - generic [ref=f24e23]:
+      - button "How often should I schedule commercial cleaning?" [ref=f24e24]:
+        - generic [ref=f24e25]: How often should I schedule commercial cleaning?
+        - img [ref=f24e26]
+      - region "How often should I schedule commercial cleaning?":
+        - paragraph [ref=f24e28]: It depends on your industry and foot traffic. Most offices benefit from weekly or bi-weekly service, while restaurants and medical facilities typically require daily cleaning. We'll recommend a schedule based on your specific space during your free consultation.
+    - generic [ref=f24e29]:
+      - button "Do you bring your own supplies and equipment?" [ref=f24e30]:
+        - generic [ref=f24e31]: Do you bring your own supplies and equipment?
+        - img [ref=f24e32]
+      - region "Do you bring your own supplies and equipment?":
+        - paragraph [ref=f24e34]: Yes. Our team arrives fully equipped with professional-grade cleaning products, tools, and equipment. If you have preferences for specific products (fragrance-free, eco-friendly, etc.) just let us know and we'll accommodate.
+    - generic [ref=f24e35]:
+      - button "Are you insured and bonded?" [ref=f24e36]:
+        - generic [ref=f24e37]: Are you insured and bonded?
+        - img [ref=f24e38]
+      - region "Are you insured and bonded?":
+        - paragraph [ref=f24e40]: Absolutely. Flex Commercial Services is fully insured and bonded for your protection and peace of mind.
+    - generic [ref=f24e41]:
+      - button "Do you offer contracts or is it month-to-month?" [ref=f24e42]:
+        - generic [ref=f24e43]: Do you offer contracts or is it month-to-month?
+        - img [ref=f24e44]
+      - region "Do you offer contracts or is it month-to-month?":
+        - paragraph [ref=f24e46]: We offer both. We have flexible month-to-month arrangements as well as discounted contract pricing for clients who prefer a longer-term commitment. We'll find the structure that works best for your business.
+    - generic [ref=f24e47]:
+      - button "What industries do you serve?" [ref=f24e48]:
+        - generic [ref=f24e49]: What industries do you serve?
+        - img [ref=f24e50]
+      - region "What industries do you serve?":
+        - paragraph [ref=f24e52]: We serve a wide range of industries including offices, restaurants, fitness centers, schools, daycares, medical facilities, and more across Northeast Ohio.
+    - generic [ref=f24e53]:
+      - button "How do I get a quote?" [ref=f24e54]:
+        - generic [ref=f24e55]: How do I get a quote?
+        - img [ref=f24e56]
+      - region "How do I get a quote?":
+        - paragraph [ref=f24e58]: Simply fill out our booking form or call us at (216)-801-9686 and we'll get back to you within 24 hours with a customized quote for your space.
+    - generic [ref=f24e59]:
+      - button "What makes Flex Commercial Services different from other cleaning companies?" [ref=f24e60]:
+        - generic [ref=f24e61]: What makes Flex Commercial Services different from other cleaning companies?
+        - img [ref=f24e62]
+      - region "What makes Flex Commercial Services different from other cleaning companies?":
+        - paragraph [ref=f24e64]: We were built from the ground up by people who have done this work themselves — not a franchise operation. David and Riley started Flex because they saw how a truly professional clean could transform a business environment. Every job gets that same personal attention to detail.
+    - generic [ref=f24e65]:
+      - button "Do you serve areas outside of Cleveland?" [ref=f24e66]:
+        - generic [ref=f24e67]: Do you serve areas outside of Cleveland?
+        - img [ref=f24e68]
+      - region "Do you serve areas outside of Cleveland?":
+        - paragraph [ref=f24e70]: Yes. We serve the greater Northeast Ohio area including Lakewood, Parma, Strongsville, Beachwood, Solon, and surrounding communities. Contact us to confirm service availability in your area.
+  - generic [ref=f24e73]:
+    - heading "Still Have Questions?" [level=2] [ref=f24e74]
+    - paragraph [ref=f24e75]:
+      - text: Our team is happy to help. Call us at
+      - link "(216)-801-9686" [ref=f24e76] [cursor=pointer]:
+        - /url: tel:2168019686
+      - text: or get a free quote today — we respond within 24 hours.
+    - generic [ref=f24e77]:
+      - link "Get a Free Quote" [ref=f24e78] [cursor=pointer]:
+        - /url: /booking
+      - link "Call Us Now" [ref=f24e79] [cursor=pointer]:
+        - /url: tel:2168019686
+  - contentinfo [ref=f24e80]:
+    - generic [ref=f24e81]:
+      - generic [ref=f24e82]:
+        - img "Flex Commercial Services" [ref=f24e83]
+        - paragraph [ref=f24e84]: Cleveland's trusted commercial cleaning experts — delivering spotless results across Northeast Ohio.
+      - generic [ref=f24e85]:
+        - generic [ref=f24e86]:
+          - heading "Quick Links" [level=3] [ref=f24e87]
+          - list [ref=f24e88]:
+            - listitem [ref=f24e89]:
+              - link "Home" [ref=f24e90] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f24e91]:
+              - link "About" [ref=f24e92] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=f24e93]:
+              - link "Services" [ref=f24e94] [cursor=pointer]:
+                - /url: /services
+            - listitem [ref=f24e95]:
+              - link "Booking" [ref=f24e96] [cursor=pointer]:
+                - /url: /booking
+            - listitem [ref=f24e97]:
+              - link "FAQ" [ref=f24e98] [cursor=pointer]:
+                - /url: /faq
+        - generic [ref=f24e99]:
+          - heading "Contact Us" [level=3] [ref=f24e100]
+          - list [ref=f24e101]:
+            - listitem [ref=f24e102]: Cleveland, OH 44101
+            - listitem [ref=f24e103]:
+              - link "(216)-801-9686" [ref=f24e104] [cursor=pointer]:
+                - /url: tel:2168019686
+            - listitem [ref=f24e105]:
+              - link "info@flexcommercialservices.com" [ref=f24e106] [cursor=pointer]:
+                - /url: mailto:info@flexcommercialservices.com
+        - generic [ref=f24e107]:
+          - heading "Follow Us" [level=3] [ref=f24e108]
+          - link "@teamflexservices" [ref=f24e109] [cursor=pointer]:
+            - /url: https://www.instagram.com/teamflexservices
+            - img [ref=f24e110]
+            - text: "@teamflexservices"
+      - paragraph [ref=f24e113]: © Flex Commercial Services 2025. All Rights Reserved.
+  - generic [ref=f24e116]:
+    - button "Menu" [ref=f24e117]:
+      - img [ref=f24e119]
+      - generic: Menu
+    - button "Inspect" [ref=f24e123]:
+      - img [ref=f24e125]
+      - generic: Inspect
+    - button "Audit" [ref=f24e127]:
+      - img [ref=f24e129]
+      - generic: Audit
+    - button "Settings" [ref=f24e132]:
+      - img [ref=f24e134]
+      - generic: Settings

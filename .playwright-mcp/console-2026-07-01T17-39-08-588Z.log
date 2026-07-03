@@ -1,0 +1,8 @@
+[  574333ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:4321/@vite/client:1726
+[  622011ms] [INFO] Launched external handler for 'mailto:info@flexcommercialservices.com'. @ http://localhost:4321/:0
+[  640357ms] [INFO] Launched external handler for 'mailto:info@flexcommercialservices.com'. @ http://localhost:4321/:0
+[  669245ms] [INFO] Launched external handler for 'mailto:info@flexcommercialservices.com'. @ http://localhost:4321/:0
+[ 1866038ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:4321/@vite/client:1726
+[ 2402926ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:4321/@vite/client:1726
+[ 2992212ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:4321/@vite/client:1726
+[ 3555792ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:4321/@vite/client:1726

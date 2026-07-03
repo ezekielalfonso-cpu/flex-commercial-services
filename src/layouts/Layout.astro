@@ -1,23 +1,74 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import '../styles/global.css';
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+interface Props {
+  title: string;
+  description: string;
+  canonicalURL?: string;
+  ogImage?: string;
+}
+
+const {
+  title,
+  description,
+  canonicalURL = Astro.url.href,
+  ogImage = 'https://assets.cdn.filesafe.space/jGKx4eTTbP1enXZEBWxm/media/68124cf13176b90a9f675eb4.png'
+} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="generator" content={Astro.generator} />
+
+  <title>{title}</title>
+  <meta name="description" content={description} />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href={canonicalURL} />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:site_name" content="Flex Commercial Services" />
+
+  <!-- Geo Tags -->
+  <meta name="geo.region" content="US-OH" />
+  <meta name="geo.placename" content="Cleveland, Ohio" />
+  <meta name="geo.position" content="41.4993;-81.6944" />
+
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    type="image/png"
+    href="https://assets.cdn.filesafe.space/jGKx4eTTbP1enXZEBWxm/media/68124cf13176b90a9f675eb4.png"
+  />
+
+  <!-- CDN preconnect -->
+  <link rel="preconnect" href="https://assets.cdn.filesafe.space" />
+
+  <!-- Google Fonts: Playfair Display (headings) + Mulish (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style is:global>
+    body {
+      font-family: 'Mulish', system-ui, sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+  </style>
+
+  <!-- GA4: Replace this comment with your GA4 script tag -->
+</head>
+<body>
+  <slot />
+</body>
+</html>

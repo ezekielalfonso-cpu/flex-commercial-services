@@ -1,0 +1,88 @@
+---
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  items: FAQItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="faq-list space-y-3">
+  {items.map((item, i) => (
+    <div
+      class="faq-item animate-on-scroll fade-up bg-brand-navy border border-[#2a3f6a] rounded-xl overflow-hidden"
+      style={`transition-delay: ${(i * 0.05).toFixed(2)}s`}
+    >
+      <button
+        class="w-full text-left px-6 py-5 flex items-center justify-between gap-4 text-white font-semibold text-base hover:bg-[#1e3054] transition-colors duration-200"
+        aria-expanded="false"
+        aria-controls={`faq-answer-${i}`}
+        id={`faq-btn-${i}`}
+      >
+        <span>{item.question}</span>
+        <svg
+          class="faq-icon w-5 h-5 text-blue-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+
+      <div
+        class="faq-answer"
+        id={`faq-answer-${i}`}
+        role="region"
+        aria-labelledby={`faq-btn-${i}`}
+      >
+        <p class="px-6 pb-5 text-brand-muted text-sm leading-relaxed">
+          {item.answer}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
+
+<script>
+  const faqItems = document.querySelectorAll<HTMLElement>('.faq-item');
+
+  function closeAll() {
+    faqItems.forEach(item => {
+      item.querySelector('.faq-answer')?.classList.remove('open');
+      item.querySelector('.faq-icon')?.classList.remove('open');
+      item.querySelector('button')?.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  faqItems.forEach(item => {
+    const btn    = item.querySelector<HTMLButtonElement>('button');
+    const answer = item.querySelector<HTMLElement>('.faq-answer');
+    const icon   = item.querySelector<HTMLElement>('.faq-icon');
+
+    function toggle() {
+      const isOpen = answer?.classList.contains('open');
+      closeAll();
+      if (!isOpen) {
+        answer?.classList.add('open');
+        icon?.classList.add('open');
+        btn?.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    btn?.addEventListener('click', toggle);
+
+    // Keyboard: Enter and Space both toggle
+    btn?.addEventListener('keydown', (e: KeyboardEvent) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle();
+      }
+    });
+  });
+</script>

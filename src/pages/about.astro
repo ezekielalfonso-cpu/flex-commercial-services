@@ -1,0 +1,176 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import ScrollAnimations from '../components/ScrollAnimations.astro';
+
+const features = [
+  {
+    title: "We've Got This",
+    body: "Trusted across Northeast Ohio for spotless, safe spaces. Our team handles every detail so you can focus on running your business.",
+  },
+  {
+    title: 'Tailored Solutions',
+    body: "No two businesses are alike. We build customized, flexible cleaning plans that fit your schedule, budget, and specific needs.",
+  },
+  {
+    title: 'Proven Expertise',
+    body: "Years of hands-on, detail-driven experience across restaurants, offices, fitness centers, schools, and medical facilities.",
+  },
+  {
+    title: 'Award-Worthy Clean',
+    body: "Advanced tools and consistently high-quality results. We don't just clean — we transform environments.",
+  },
+];
+
+const stats = [
+  { target: 100, suffix: '+', prefix: '', label: 'Clients Served' },
+  { target: 5,   suffix: '★', prefix: '', label: 'Average Rating' },
+  { target: 3,   suffix: '+', prefix: '', label: 'Years Experience' },
+];
+---
+
+<Layout
+  title="About Us | Flex Commercial Services Cleveland, OH"
+  description="Meet the team behind Cleveland's trusted commercial cleaning company. David George and Riley Hinkel built Flex from the ground up."
+>
+  <Navbar />
+
+  <!-- ── PAGE HERO ──────────────────────────────────────────────────────── -->
+  <section
+    class="relative pt-36 pb-24 flex items-center justify-center overflow-hidden"
+    style="background: linear-gradient(145deg, #0f1827 0%, #1a2744 50%, #0f1827 100%);"
+  >
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 30% 50%, #2563eb 0%, transparent 60%);"></div>
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+      <h1 class="animate-on-scroll fade-up text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight mb-6">
+        About Flex Commercial Services<br />
+        <span class="text-blue-400">Cleveland's Commercial Cleaning Experts</span>
+      </h1>
+      <p class="animate-on-scroll fade-up stagger-1 text-brand-muted text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+        Award-worthy commercial cleaning services — built from the ground up by people who have done this work themselves.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── FOUNDER STORY ──────────────────────────────────────────────────── -->
+  <section style="background-color: #1a2744; padding: 6rem 0;">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+
+        <!-- Image -->
+        <div class="animate-on-scroll zoom-in order-2 lg:order-1">
+          <div style="padding: 2rem;">
+            <img
+              src="https://assets.cdn.filesafe.space/jGKx4eTTbP1enXZEBWxm/media/69d2b4c73d829c73b24a6fa6.png"
+              alt="Flex Family of Companies"
+              style="filter: brightness(0) invert(1); display: block; width: 100%; height: auto; max-width: 400px; margin: 0 auto; overflow: visible;"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <!-- Story text -->
+        <div class="order-1 lg:order-2">
+          <span class="animate-on-scroll fade-up text-blue-400 text-sm font-semibold uppercase tracking-widest mb-3 block">
+            Our Story
+          </span>
+          <h2 class="animate-on-scroll fade-up text-3xl md:text-4xl font-black text-white mb-6 leading-tight">
+            Live now, clean less.
+          </h2>
+
+          <!-- Pull quote panel -->
+          <div class="animate-on-scroll fade-up bg-[#1a2744] rounded-xl p-8 mb-6 border border-[#2a3f6a]">
+            <blockquote class="pull-quote">
+              David George and Riley Hinkel started Flex Services the way most good things start —
+              with years of actual work. Not from a boardroom, but from restaurant kitchens and
+              office hallways. They saw firsthand how a truly professional clean could transform a
+              business environment, and they built Flex because they knew they could do it better.
+            </blockquote>
+          </div>
+
+          <p class="animate-on-scroll fade-up text-brand-muted leading-relaxed mb-4">
+            Every job at Flex gets that same personal attention to detail that David and Riley brought
+            from day one. We're not a franchise operation — we're a Northeast Ohio business that takes
+            pride in the community we serve.
+          </p>
+          <p class="animate-on-scroll fade-up text-brand-muted leading-relaxed">
+            From medical sanitization and routine office maintenance to post-event cleanup, Flex
+            Commercial Services delivers professional cleaning done right, every time.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FEATURE CARDS ──────────────────────────────────────────────────── -->
+  <section class="py-24 bg-brand-navy">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-16">
+        <h2 class="animate-on-scroll fade-up text-3xl md:text-4xl font-black text-white mb-4">
+          Why Choose Flex?
+        </h2>
+        <p class="animate-on-scroll fade-up stagger-1 text-brand-muted max-w-xl mx-auto">
+          Four reasons Cleveland businesses keep coming back.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {features.map((f, i) => (
+          <div
+            class={`feature-card animate-on-scroll scale-in stagger-${i + 1} bg-[#1e3054] border border-[#2a3f6a] rounded-2xl p-7 flex flex-col gap-4 text-center`}
+          >
+            <h3 class="text-white font-bold text-lg">{f.title}</h3>
+            <p class="text-brand-muted text-sm leading-relaxed">{f.body}</p>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── STATS COUNTER ──────────────────────────────────────────────────── -->
+  <section class="py-20 bg-brand-accent">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+        {stats.map((stat, i) => (
+          <div class={`animate-on-scroll scale-in stagger-${i + 1}`}>
+            <p class="text-5xl font-black text-white stat-number mb-2">
+              <span
+                data-target={stat.target}
+                data-suffix={stat.suffix}
+                data-prefix={stat.prefix}
+              >
+                0{stat.suffix}
+              </span>
+            </p>
+            <p class="text-blue-200 font-medium">{stat.label}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────────────────────────── -->
+  <section class="py-20 bg-brand-dark">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="animate-on-scroll fade-up text-3xl font-black text-white mb-4">
+        Ready to Work with the Best?
+      </h2>
+      <p class="animate-on-scroll fade-up stagger-1 text-brand-muted mb-8">
+        Call us at <a href="tel:2168019686" class="text-blue-400 hover:text-blue-300 font-semibold">(216)-801-9686</a> or fill out the booking form to get your free personalized quote.
+      </p>
+      <div class="animate-on-scroll fade-up stagger-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/booking"  class="btn-primary px-8 py-4">Get a Free Quote</a>
+        <a href="/services" class="btn-outline  px-8 py-4">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+  <ScrollAnimations />
+</Layout>
