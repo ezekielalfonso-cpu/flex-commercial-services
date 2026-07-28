@@ -2,6 +2,7 @@
 interface FAQItem {
   question: string;
   answer: string;
+  shortAnswer?: string;
 }
 
 interface Props {
@@ -14,26 +15,28 @@ const { items } = Astro.props;
 <div class="faq-list space-y-3">
   {items.map((item, i) => (
     <div
-      class="faq-item animate-on-scroll fade-up bg-brand-navy border border-[#2a3f6a] rounded-xl overflow-hidden"
+      class="faq-item animate-on-scroll fade-up bg-brand-navy border border-[#2e2e2e] rounded-xl overflow-hidden"
       style={`transition-delay: ${(i * 0.05).toFixed(2)}s`}
     >
-      <button
-        class="w-full text-left px-6 py-5 flex items-center justify-between gap-4 text-white font-semibold text-base hover:bg-[#1e3054] transition-colors duration-200"
-        aria-expanded="false"
-        aria-controls={`faq-answer-${i}`}
-        id={`faq-btn-${i}`}
-      >
-        <span>{item.question}</span>
-        <svg
-          class="faq-icon w-5 h-5 text-blue-400"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
+      <h2 class="contents">
+        <button
+          class="w-full text-left px-6 py-5 flex items-center justify-between gap-4 text-white font-semibold text-base hover:bg-[#1A1A1A] transition-colors duration-200"
+          aria-expanded="false"
+          aria-controls={`faq-answer-${i}`}
+          id={`faq-btn-${i}`}
         >
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
+          <span>{item.question}</span>
+          <svg
+            class="faq-icon w-5 h-5 text-brand-accent-dark"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+      </h2>
 
       <div
         class="faq-answer"
@@ -41,9 +44,20 @@ const { items } = Astro.props;
         role="region"
         aria-labelledby={`faq-btn-${i}`}
       >
-        <p class="px-6 pb-5 text-brand-muted text-sm leading-relaxed">
-          {item.answer}
-        </p>
+        <div class="px-6 pb-5 text-brand-muted text-sm leading-relaxed">
+          <p>{item.shortAnswer ?? item.answer}</p>
+
+          {item.shortAnswer && (
+            <details class="mt-3 group">
+              <summary class="cursor-pointer text-brand-accent-dark hover:text-brand-accent font-semibold transition-colors">
+                More details
+              </summary>
+              <p class="mt-3">
+                {item.answer}
+              </p>
+            </details>
+          )}
+        </div>
       </div>
     </div>
   ))}

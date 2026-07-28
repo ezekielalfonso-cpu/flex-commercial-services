@@ -1,0 +1,292 @@
+{
+  "title": "About Us | Flex Commercial Services Cleveland, OH",
+  "meta_description": "Meet the team behind Cleveland's trusted commercial cleaning company. David George and Riley Hinkel built Flex from the ground up.",
+  "meta_robots": null,
+  "canonical": "https://flexcommercialservices.com/about",
+  "h1": [
+    "About Flex Commercial ServicesCleveland's Commercial Cleaning Experts"
+  ],
+  "h2": [
+    "Live now, clean less.",
+    "Meet the Owners",
+    "Why Choose Flex?",
+    "Ready to Work with the Best?"
+  ],
+  "h3": [
+    "David George",
+    "Riley Hinkel",
+    "We've Got This",
+    "Tailored Solutions",
+    "Proven Expertise",
+    "Consistently Exceptional",
+    "Quick Links",
+    "Contact Us",
+    "Follow Us"
+  ],
+  "images": [
+    {
+      "src": "http://localhost:4321/images/logo.png",
+      "alt": "Flex Commercial Services",
+      "width": null,
+      "height": null,
+      "loading": "eager",
+      "lazy_method": "none"
+    },
+    {
+      "src": "https://assets.cdn.filesafe.space/jGKx4eTTbP1enXZEBWxm/media/69d2b4c73d829c73b24a6fa6.png",
+      "alt": "Flex Family of Companies",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "http://localhost:4321/images/ai-headshot-david.png",
+      "alt": "David George",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "http://localhost:4321/images/ai-headshot-riley.png",
+      "alt": "Riley Hinkel",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "http://localhost:4321/images/logo.png",
+      "alt": "Flex Commercial Services",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    }
+  ],
+  "links": {
+    "internal": [
+      {
+        "href": "http://localhost:4321/",
+        "text": "",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/",
+        "text": "Home",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/about",
+        "text": "About",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services",
+        "text": "Services",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/booking",
+        "text": "Booking",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/faq",
+        "text": "FAQ",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/",
+        "text": "Home",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/about",
+        "text": "About",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services",
+        "text": "Services",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/booking",
+        "text": "Booking",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/faq",
+        "text": "FAQ",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/booking",
+        "text": "Get a Free Quote",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services",
+        "text": "Our Services",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/",
+        "text": "Home",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/about",
+        "text": "About",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services",
+        "text": "Services",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/booking",
+        "text": "Booking",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/faq",
+        "text": "FAQ",
+        "rel": []
+      }
+    ],
+    "external": [
+      {
+        "href": "tel:2168019686",
+        "text": "(216)-801-9686",
+        "rel": []
+      },
+      {
+        "href": "tel:2168019686",
+        "text": "(216)-801-9686",
+        "rel": []
+      },
+      {
+        "href": "tel:2168019686",
+        "text": "(216)-801-9686",
+        "rel": []
+      },
+      {
+        "href": "tel:2168019686",
+        "text": "(216)-801-9686",
+        "rel": []
+      },
+      {
+        "href": "mailto:teamflexcommercialservices@gmail.com",
+        "text": "teamflexcommercialservices@gmail.com",
+        "rel": []
+      },
+      {
+        "href": "https://www.instagram.com/teamflexservices",
+        "text": "@teamflexservices",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      }
+    ]
+  },
+  "schema": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "ProfessionalService"
+      ],
+      "@id": "https://flexcommercialservices.com/#business",
+      "name": "Flex Commercial Services",
+      "description": "Professional commercial cleaning company serving Cleveland and Northeast Ohio. Specializing in janitorial services, medical sanitization, and post-event cleanup.",
+      "url": "https://flexcommercialservices.com",
+      "telephone": "+1-216-801-9686",
+      "email": "teamflexcommercialservices@gmail.com",
+      "image": "https://assets.cdn.filesafe.space/jGKx4eTTbP1enXZEBWxm/media/68124cf13176b90a9f675eb4.png",
+      "priceRange": "Custom quote",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cleveland",
+        "addressRegion": "OH",
+        "postalCode": "44102",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.4993,
+        "longitude": -81.6944
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Cleveland"
+        },
+        {
+          "@type": "City",
+          "name": "Lakewood"
+        },
+        {
+          "@type": "City",
+          "name": "Parma"
+        },
+        {
+          "@type": "City",
+          "name": "Strongsville"
+        },
+        {
+          "@type": "City",
+          "name": "Beachwood"
+        },
+        {
+          "@type": "City",
+          "name": "Solon"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/teamflexservices"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://flexcommercialservices.com/#website",
+      "url": "https://flexcommercialservices.com",
+      "name": "Flex Commercial Services",
+      "publisher": {
+        "@id": "https://flexcommercialservices.com/#business"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://flexcommercialservices.com/about#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://flexcommercialservices.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://flexcommercialservices.com/about"
+        }
+      ]
+    }
+  ],
+  "open_graph": {
+    "og:title": "About Us | Flex Commercial Services Cleveland, OH",
+    "og:description": "Meet the team behind Cleveland's trusted commercial cleaning company. David George and Riley Hinkel built Flex from the ground up.",
+    "og:image": "https://assets.cdn.filesafe.space/jGKx4eTTbP1enXZEBWxm/media/68124cf13176b90a9f675eb4.png",
+    "og:type": "website",
+    "og:url": "https://flexcommercialservices.com/about",
+    "og:site_name": "Flex Commercial Services"
+  },
+  "twitter_card": {},
+  "word_count": 323,
+  "hreflang": []
+}

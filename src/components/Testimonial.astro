@@ -12,12 +12,12 @@ const animClass = direction === 'left' ? 'fade-left' : 'fade-right';
 ---
 
 <div
-  class={`testimonial-card animate-on-scroll ${animClass} relative bg-brand-navy border border-[#2a3f6a] rounded-2xl p-8 overflow-hidden flex flex-col gap-5`}
+  class={`testimonial-card animate-on-scroll ${animClass} relative bg-brand-navy border border-[#2e2e2e] rounded-2xl p-8 overflow-hidden flex flex-col gap-5`}
   style={`transition-delay: ${delay}s`}
 >
   <!-- Decorative large quote mark -->
   <span
-    class="absolute top-3 right-5 text-9xl leading-none font-serif text-blue-900/40 select-none pointer-events-none"
+    class="absolute top-3 right-5 text-9xl leading-none font-serif text-brand-accent-dark/40 select-none pointer-events-none"
     aria-hidden="true"
   >"</span>
 
@@ -37,7 +37,7 @@ const animClass = direction === 'left' ? 'fade-left' : 'fade-right';
 
   <!-- Attribution -->
   <div class="border-t border-white/10 pt-4">
-    <p class="text-white font-bold text-sm">— {name}</p>
+    <p class="text-white font-bold text-sm">- {name}</p>
     <p class="text-brand-muted text-xs italic mt-0.5">{business}</p>
   </div>
 </div>

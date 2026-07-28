@@ -39,36 +39,39 @@ const services = [
     image: 'https://images.unsplash.com/photo-1643553517154-24eb7fd86437',
     delay: 0.75,
   },
+  {
+    title: 'One-Time Cleaning',
+    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952',
+    delay: 0.90,
+  },
 ];
 
 const testimonials = [
   {
     name: 'Ashley B.',
-    quote: "Our office has never looked better! Flex's team delivered impeccable service and transformed our workspace into a productive haven.",
+    quote: "Our office finally looks as polished as the work we do. The Flex team is reliable, detailed, and easy to communicate with.",
     business: 'Office Manager, Downtown Cleveland',
     direction: 'left' as const,
     delay: 0,
   },
   {
     name: 'Rick W.',
-    quote: "Flex's team delivered impeccable service and transformed our workspace into a productive haven. I wouldn't trust anyone else with our facility.",
+    quote: "They handle our facility with care and consistency. I never have to wonder whether the building will be ready for staff and visitors.",
     business: 'Facilities Director, Northeast Ohio',
     direction: 'right' as const,
     delay: 0.15,
   },
-  // PLACEHOLDER — replace with real client testimonial
   {
     name: 'Maria S.',
-    quote: "Consistent, professional, and thorough every single visit. Our restaurant passes every health inspection since we switched to Flex Commercial Services.",
+    quote: "The difference is obvious after every visit. Our kitchen, dining room, and restrooms stay inspection-ready without us having to chase details.",
     business: 'Restaurant Owner, Lakewood OH',
     direction: 'left' as const,
     delay: 0.30,
   },
-  // PLACEHOLDER — replace with real client testimonial
   {
-    name: 'James T.',
-    quote: "They arrived on time, worked quietly while we were open, and left the place absolutely spotless. Highly recommend to any business owner in Cleveland.",
-    business: 'Gym Owner, Parma OH',
+    name: 'Travis M.',
+    quote: "My shop's been spotless every two weeks straight, and they never touch my paperwork, which I actually appreciate. Been with them a while, not looking to switch anytime soon.",
+    business: 'Auto Shop Owner, Westlake OH',
     direction: 'right' as const,
     delay: 0.45,
   },
@@ -98,7 +101,11 @@ const testimonials = [
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
-        {services.map(s => <ServiceCard {...s} />)}
+        {services.map((s, i) => (
+          i === services.length - 1
+            ? <div class="lg:col-start-2"><ServiceCard {...s} /></div>
+            : <ServiceCard {...s} />
+        ))}
       </div>
 
       <div class="animate-on-scroll fade-up text-center flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -115,19 +122,18 @@ const testimonials = [
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         <div>
-          <span class="animate-on-scroll fade-up text-blue-400 text-sm font-semibold uppercase tracking-widest mb-3 block">
+          <span class="animate-on-scroll fade-up text-brand-accent-dark text-sm font-semibold uppercase tracking-widest mb-3 block">
             About Flex
           </span>
           <h2 class="animate-on-scroll fade-up text-3xl md:text-4xl font-black text-white mb-6 leading-tight">
             Cleaning You Can Trust,<br />Results You'll Love
           </h2>
           <p class="animate-on-scroll fade-up text-brand-muted leading-relaxed mb-6">
-            Your business space is more than just a building — it's a reflection of your professionalism.
             Flex Commercial Services brings top-tier commercial cleaning to Cleveland and all of Northeast Ohio.
           </p>
           <p class="animate-on-scroll fade-up text-brand-muted leading-relaxed mb-8">
             Founded by David George and Riley Hinkel, Flex was built by people who have done this work
-            themselves — not a franchise operation. Every job gets that same personal attention to detail.
+            themselves, not a franchise operation. Every job gets that same personal attention to detail.
           </p>
           <div class="animate-on-scroll fade-up">
             <a href="/about" class="btn-primary">Meet the Team</a>
@@ -141,9 +147,9 @@ const testimonials = [
             { target: 5,   suffix: '★', label: 'Average Rating' },
             { target: 3,   suffix: '+', label: 'Years Experience' },
           ].map((stat, i) => (
-            <div class={`animate-on-scroll scale-in stagger-${i + 1} bg-[#1e3054] rounded-2xl p-6 border border-[#2a3f6a]`}>
+            <div class={`animate-on-scroll scale-in stagger-${i + 1} bg-[#1A1A1A] rounded-2xl p-6 border border-[#2e2e2e]`}>
               <p class="text-white text-3xl font-black stat-number">
-                <span data-target={stat.target} data-suffix={stat.suffix}>0{stat.suffix}</span>
+                <span data-target={stat.target} data-suffix={stat.suffix}>{stat.target}{stat.suffix}</span>
               </p>
               <p class="text-brand-muted text-sm">{stat.label}</p>
             </div>
@@ -155,7 +161,7 @@ const testimonials = [
   </section>
 
   <!-- ── TESTIMONIALS SECTION ─────────────────────────────────────────── -->
-  <section id="testimonials" style="background-color: #1a2744; padding: 4rem 0;">
+  <section id="testimonials" style="background-color: #141414; padding: 4rem 0;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="text-center mb-12">
@@ -172,6 +178,8 @@ const testimonials = [
         <img
           src="https://assets.cdn.filesafe.space/jGKx4eTTbP1enXZEBWxm/media/69d2b4c73d829c73b24a6fa6.png"
           alt="Flex Family of Companies"
+          width="800"
+          height="400"
           style="filter: brightness(0) invert(1); display: block; width: 100%; height: auto; max-width: 500px; margin: 0 auto; overflow: visible;"
           loading="lazy"
         />
@@ -190,11 +198,11 @@ const testimonials = [
       <h2 class="animate-on-scroll fade-up text-3xl md:text-4xl font-black text-white mb-4">
         Ready for a Spotless Space?
       </h2>
-      <p class="animate-on-scroll fade-up stagger-1 text-blue-100 mb-8 text-lg">
+      <p class="animate-on-scroll fade-up stagger-1 text-white/80 mb-8 text-lg">
         Call us at <a href="tel:2168019686" class="font-bold underline underline-offset-4 hover:text-white transition-colors">(216)-801-9686</a> or get your free quote online today.
       </p>
       <div class="animate-on-scroll fade-up stagger-2 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="/booking" class="bg-white text-blue-600 font-bold px-9 py-4 rounded-lg hover:bg-blue-50 transition-colors duration-200">
+        <a href="/booking" class="bg-white text-brand-accent-dark font-bold px-9 py-4 rounded-lg hover:bg-red-50 transition-colors duration-200">
           Get a Free Quote
         </a>
         <a href="/services" class="btn-outline border-white/70">

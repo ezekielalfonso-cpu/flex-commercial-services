@@ -1,0 +1,396 @@
+{
+  "title": "Flex Commercial Services | Commercial Cleaning Cleveland, OH",
+  "meta_description": "Professional commercial cleaning in Cleveland, OH. Offices, restaurants, medical facilities, and more. Get a free quote today.",
+  "meta_robots": null,
+  "canonical": "https://flexcommercialservices.com/",
+  "h1": [
+    "SpotlessSpaces,SuperiorService"
+  ],
+  "h2": [
+    "What We Offer",
+    "Cleaning You Can Trust,Results You'll Love",
+    "A Proud Member of the Flex Family of Companies",
+    "Ready for a Spotless Space?"
+  ],
+  "h3": [
+    "Restaurant Cleaning",
+    "Office Cleaning",
+    "Fitness Center Cleaning",
+    "School / Daycare Cleaning",
+    "Move-In / Move-Out Cleaning",
+    "And Much More",
+    "One-Time Cleaning",
+    "Quick Links",
+    "Contact Us",
+    "Follow Us"
+  ],
+  "images": [
+    {
+      "src": "http://localhost:4321/images/logo.png",
+      "alt": "Flex Commercial Services",
+      "width": null,
+      "height": null,
+      "loading": null,
+      "lazy_method": "none"
+    },
+    {
+      "src": "http://localhost:4321/images/logo.png",
+      "alt": "Flex Commercial Services",
+      "width": null,
+      "height": null,
+      "loading": "eager",
+      "lazy_method": "none"
+    },
+    {
+      "src": "https://assets.cdn.filesafe.space/jGKx4eTTbP1enXZEBWxm/media/c8cdce29-f8ad-4d4a-adc7-22eb597d2e46.jpg",
+      "alt": "Professional commercial cleaning in Cleveland OH",
+      "width": null,
+      "height": null,
+      "loading": "eager",
+      "lazy_method": "none"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80&fit=crop&auto=format",
+      "alt": "Restaurant Cleaning",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80&fit=crop&auto=format",
+      "alt": "Office Cleaning",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80&fit=crop&auto=format",
+      "alt": "Fitness Center Cleaning",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1763310225230-6e15b125935a?w=800&q=80&fit=crop&auto=format",
+      "alt": "School / Daycare Cleaning",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1740657254989-42fe9c3b8cce?w=800&q=80&fit=crop&auto=format",
+      "alt": "Move-In / Move-Out Cleaning",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1643553517154-24eb7fd86437?w=800&q=80&fit=crop&auto=format",
+      "alt": "And Much More",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80&fit=crop&auto=format",
+      "alt": "One-Time Cleaning",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "https://assets.cdn.filesafe.space/jGKx4eTTbP1enXZEBWxm/media/69d2b4c73d829c73b24a6fa6.png",
+      "alt": "Flex Family of Companies",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    },
+    {
+      "src": "http://localhost:4321/images/logo.png",
+      "alt": "Flex Commercial Services",
+      "width": null,
+      "height": null,
+      "loading": "lazy",
+      "lazy_method": "native"
+    }
+  ],
+  "links": {
+    "internal": [
+      {
+        "href": "http://localhost:4321/",
+        "text": "",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/",
+        "text": "Home",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/about",
+        "text": "About",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services",
+        "text": "Services",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/booking",
+        "text": "Booking",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/faq",
+        "text": "FAQ",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/",
+        "text": "Home",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/about",
+        "text": "About",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services",
+        "text": "Services",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/booking",
+        "text": "Booking",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/faq",
+        "text": "FAQ",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/booking",
+        "text": "Get a Free Quote",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services",
+        "text": "See Our Services",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services#choose-your-plan",
+        "text": "Restaurant Cleaning",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services#choose-your-plan",
+        "text": "Office Cleaning",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services#choose-your-plan",
+        "text": "Fitness Center Cleaning",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services#choose-your-plan",
+        "text": "School / Daycare Cleaning",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services#choose-your-plan",
+        "text": "Move-In / Move-Out Cleaning",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services#choose-your-plan",
+        "text": "And Much More",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services#choose-your-plan",
+        "text": "One-Time Cleaning",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services",
+        "text": "Service Details",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/booking",
+        "text": "Book a Service",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/about",
+        "text": "Meet the Team",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/booking",
+        "text": "Get a Free Quote",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services",
+        "text": "View All Services",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/",
+        "text": "Home",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/about",
+        "text": "About",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/services",
+        "text": "Services",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/booking",
+        "text": "Booking",
+        "rel": []
+      },
+      {
+        "href": "http://localhost:4321/faq",
+        "text": "FAQ",
+        "rel": []
+      }
+    ],
+    "external": [
+      {
+        "href": "tel:2168019686",
+        "text": "(216)-801-9686",
+        "rel": []
+      },
+      {
+        "href": "tel:2168019686",
+        "text": "(216)-801-9686",
+        "rel": []
+      },
+      {
+        "href": "tel:2168019686",
+        "text": "(216)-801-9686",
+        "rel": []
+      },
+      {
+        "href": "tel:2168019686",
+        "text": "(216)-801-9686",
+        "rel": []
+      },
+      {
+        "href": "tel:2168019686",
+        "text": "(216)-801-9686",
+        "rel": []
+      },
+      {
+        "href": "mailto:teamflexcommercialservices@gmail.com",
+        "text": "teamflexcommercialservices@gmail.com",
+        "rel": []
+      },
+      {
+        "href": "https://www.instagram.com/teamflexservices",
+        "text": "@teamflexservices",
+        "rel": [
+          "noopener",
+          "noreferrer"
+        ]
+      }
+    ]
+  },
+  "schema": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "ProfessionalService"
+      ],
+      "@id": "https://flexcommercialservices.com/#business",
+      "name": "Flex Commercial Services",
+      "description": "Professional commercial cleaning company serving Cleveland and Northeast Ohio. Specializing in janitorial services, medical sanitization, and post-event cleanup.",
+      "url": "https://flexcommercialservices.com",
+      "telephone": "+1-216-801-9686",
+      "email": "teamflexcommercialservices@gmail.com",
+      "image": "https://assets.cdn.filesafe.space/jGKx4eTTbP1enXZEBWxm/media/68124cf13176b90a9f675eb4.png",
+      "priceRange": "Custom quote",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cleveland",
+        "addressRegion": "OH",
+        "postalCode": "44102",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.4993,
+        "longitude": -81.6944
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Cleveland"
+        },
+        {
+          "@type": "City",
+          "name": "Lakewood"
+        },
+        {
+          "@type": "City",
+          "name": "Parma"
+        },
+        {
+          "@type": "City",
+          "name": "Strongsville"
+        },
+        {
+          "@type": "City",
+          "name": "Beachwood"
+        },
+        {
+          "@type": "City",
+          "name": "Solon"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/teamflexservices"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://flexcommercialservices.com/#website",
+      "url": "https://flexcommercialservices.com",
+      "name": "Flex Commercial Services",
+      "publisher": {
+        "@id": "https://flexcommercialservices.com/#business"
+      }
+    }
+  ],
+  "open_graph": {
+    "og:title": "Flex Commercial Services | Commercial Cleaning Cleveland, OH",
+    "og:description": "Professional commercial cleaning in Cleveland, OH. Offices, restaurants, medical facilities, and more. Get a free quote today.",
+    "og:image": "https://assets.cdn.filesafe.space/jGKx4eTTbP1enXZEBWxm/media/68124cf13176b90a9f675eb4.png",
+    "og:type": "website",
+    "og:url": "https://flexcommercialservices.com/",
+    "og:site_name": "Flex Commercial Services"
+  },
+  "twitter_card": {},
+  "word_count": 333,
+  "hreflang": []
+}

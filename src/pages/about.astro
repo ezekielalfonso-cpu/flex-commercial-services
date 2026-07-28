@@ -15,11 +15,11 @@ const features = [
   },
   {
     title: 'Proven Expertise',
-    body: "Years of hands-on, detail-driven experience across restaurants, offices, fitness centers, schools, and medical facilities.",
+    body: "3+ years of hands-on, detail-driven experience across restaurants, offices, fitness centers, schools, and medical facilities.",
   },
   {
-    title: 'Award-Worthy Clean',
-    body: "Advanced tools and consistently high-quality results. We don't just clean — we transform environments.",
+    title: 'Consistently Exceptional',
+    body: "Advanced tools and consistently high-quality results. We don't just clean. We transform environments.",
   },
 ];
 
@@ -28,33 +28,47 @@ const stats = [
   { target: 5,   suffix: '★', prefix: '', label: 'Average Rating' },
   { target: 3,   suffix: '+', prefix: '', label: 'Years Experience' },
 ];
+
+const owners = [
+  {
+    name: 'David George',
+    title: 'Co-Owner',
+    photo: '/images/ai-headshot-david.png',
+  },
+  {
+    name: 'Riley Hinkel',
+    title: 'Co-Owner',
+    photo: '/images/ai-headshot-riley.png',
+  },
+];
 ---
 
 <Layout
   title="About Us | Flex Commercial Services Cleveland, OH"
   description="Meet the team behind Cleveland's trusted commercial cleaning company. David George and Riley Hinkel built Flex from the ground up."
+  breadcrumbLabel="About"
 >
   <Navbar />
 
   <!-- ── PAGE HERO ──────────────────────────────────────────────────────── -->
   <section
     class="relative pt-36 pb-24 flex items-center justify-center overflow-hidden"
-    style="background: linear-gradient(145deg, #0f1827 0%, #1a2744 50%, #0f1827 100%);"
+    style="background: linear-gradient(145deg, #0a0a0a 0%, #141414 50%, #0a0a0a 100%);"
   >
-    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 30% 50%, #2563eb 0%, transparent 60%);"></div>
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 30% 50%, #C41E3A 0%, transparent 60%);"></div>
     <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
       <h1 class="animate-on-scroll fade-up text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight mb-6">
         About Flex Commercial Services<br />
-        <span class="text-blue-400">Cleveland's Commercial Cleaning Experts</span>
+        <span class="text-brand-accent-dark">Cleveland's Commercial Cleaning Experts</span>
       </h1>
       <p class="animate-on-scroll fade-up stagger-1 text-brand-muted text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-        Award-worthy commercial cleaning services — built from the ground up by people who have done this work themselves.
+        Built from the ground up by people who did the work themselves. Every job gets that same attention to detail we've maintained since the start.
       </p>
     </div>
   </section>
 
   <!-- ── FOUNDER STORY ──────────────────────────────────────────────────── -->
-  <section style="background-color: #1a2744; padding: 6rem 0;">
+  <section style="background-color: #141414; padding: 6rem 0;">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
@@ -62,9 +76,14 @@ const stats = [
         <!-- Image -->
         <div class="animate-on-scroll zoom-in order-2 lg:order-1">
           <div style="padding: 2rem;">
+            <p class="text-white text-sm font-semibold uppercase tracking-widest text-center mb-6">
+              Proud member of the Flex Family of Companies
+            </p>
             <img
               src="https://assets.cdn.filesafe.space/jGKx4eTTbP1enXZEBWxm/media/69d2b4c73d829c73b24a6fa6.png"
               alt="Flex Family of Companies"
+              width="800"
+              height="400"
               style="filter: brightness(0) invert(1); display: block; width: 100%; height: auto; max-width: 400px; margin: 0 auto; overflow: visible;"
               loading="lazy"
             />
@@ -73,7 +92,7 @@ const stats = [
 
         <!-- Story text -->
         <div class="order-1 lg:order-2">
-          <span class="animate-on-scroll fade-up text-blue-400 text-sm font-semibold uppercase tracking-widest mb-3 block">
+          <span class="animate-on-scroll fade-up text-brand-accent-dark text-sm font-semibold uppercase tracking-widest mb-3 block">
             Our Story
           </span>
           <h2 class="animate-on-scroll fade-up text-3xl md:text-4xl font-black text-white mb-6 leading-tight">
@@ -81,9 +100,9 @@ const stats = [
           </h2>
 
           <!-- Pull quote panel -->
-          <div class="animate-on-scroll fade-up bg-[#1a2744] rounded-xl p-8 mb-6 border border-[#2a3f6a]">
+          <div class="animate-on-scroll fade-up bg-[#141414] rounded-xl p-8 mb-6 border border-[#2e2e2e]">
             <blockquote class="pull-quote">
-              David George and Riley Hinkel started Flex Services the way most good things start —
+              David George and Riley Hinkel started Flex Services the way most good things start,
               with years of actual work. Not from a boardroom, but from restaurant kitchens and
               office hallways. They saw firsthand how a truly professional clean could transform a
               business environment, and they built Flex because they knew they could do it better.
@@ -92,7 +111,7 @@ const stats = [
 
           <p class="animate-on-scroll fade-up text-brand-muted leading-relaxed mb-4">
             Every job at Flex gets that same personal attention to detail that David and Riley brought
-            from day one. We're not a franchise operation — we're a Northeast Ohio business that takes
+            from day one. We're not a franchise operation. We're a Northeast Ohio business that takes
             pride in the community we serve.
           </p>
           <p class="animate-on-scroll fade-up text-brand-muted leading-relaxed">
@@ -101,6 +120,46 @@ const stats = [
           </p>
         </div>
 
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── LEADERSHIP / OWNERS ───────────────────────────────────────────────
+       Photos are AI stock placeholders. Swap each owner's `photo` value above
+       with the real headshot file when ready. -->
+  <section class="py-24 bg-brand-dark">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-16">
+        <span class="animate-on-scroll fade-up text-brand-accent-dark text-sm font-semibold uppercase tracking-widest mb-3 block">
+          Leadership
+        </span>
+        <h2 class="animate-on-scroll fade-up stagger-1 text-3xl md:text-4xl font-black text-white mb-4">
+          Meet the Owners
+        </h2>
+        <p class="animate-on-scroll fade-up stagger-2 text-brand-muted max-w-xl mx-auto">
+          The two people behind every job Flex takes on.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+        {owners.map((owner, i) => (
+          <div class={`animate-on-scroll scale-in stagger-${i + 1} bg-[#1A1A1A] border border-[#2e2e2e] rounded-2xl p-8 flex flex-col items-center text-center gap-4`}>
+            <img
+              src={owner.photo}
+              alt={owner.name}
+              width="596"
+              height="596"
+              class="w-32 h-32 rounded-full object-cover border-2 border-brand-accent-dark"
+              loading="lazy"
+            />
+            <div>
+              <h3 class="text-white font-bold text-lg">{owner.name}</h3>
+              <p class="text-brand-accent-dark text-sm font-semibold uppercase tracking-widest mt-1">{owner.title}</p>
+            </div>
+          </div>
+        ))}
       </div>
 
     </div>
@@ -122,7 +181,7 @@ const stats = [
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((f, i) => (
           <div
-            class={`feature-card animate-on-scroll scale-in stagger-${i + 1} bg-[#1e3054] border border-[#2a3f6a] rounded-2xl p-7 flex flex-col gap-4 text-center`}
+            class={`feature-card animate-on-scroll scale-in stagger-${i + 1} bg-[#1A1A1A] border border-[#2e2e2e] rounded-2xl p-7 flex flex-col gap-4 text-center`}
           >
             <h3 class="text-white font-bold text-lg">{f.title}</h3>
             <p class="text-brand-muted text-sm leading-relaxed">{f.body}</p>
@@ -145,10 +204,10 @@ const stats = [
                 data-suffix={stat.suffix}
                 data-prefix={stat.prefix}
               >
-                0{stat.suffix}
+                {stat.prefix}{stat.target}{stat.suffix}
               </span>
             </p>
-            <p class="text-blue-200 font-medium">{stat.label}</p>
+            <p class="text-white/80 font-medium">{stat.label}</p>
           </div>
         ))}
       </div>
@@ -162,7 +221,7 @@ const stats = [
         Ready to Work with the Best?
       </h2>
       <p class="animate-on-scroll fade-up stagger-1 text-brand-muted mb-8">
-        Call us at <a href="tel:2168019686" class="text-blue-400 hover:text-blue-300 font-semibold">(216)-801-9686</a> or fill out the booking form to get your free personalized quote.
+        Call us at <a href="tel:2168019686" class="text-brand-accent-dark hover:text-brand-accent font-semibold">(216)-801-9686</a> or fill out the booking form to get your free personalized quote.
       </p>
       <div class="animate-on-scroll fade-up stagger-2 flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="/booking"  class="btn-primary px-8 py-4">Get a Free Quote</a>

@@ -1,0 +1,17 @@
+{
+  "url": "http://localhost:4321/about",
+  "status_code": null,
+  "content": null,
+  "raw_content": null,
+  "is_spa": null,
+  "extracted_text": null,
+  "publication_date": null,
+  "accessibility_tree": null,
+  "headers": {},
+  "redirect_chain": [],
+  "console_errors": [],
+  "render_engine": null,
+  "render_ms": null,
+  "mode_used": null,
+  "error": "url_safety: Blocked hostname: localhost"
+}

@@ -6,6 +6,20 @@ import ScrollAnimations from '../components/ScrollAnimations.astro';
 
 const plans = [
   {
+    name: 'One-Time Clean',
+    tag: null,
+    description: 'Perfect for a single deep clean, no recurring commitment required.',
+    items: [
+      'Deep clean of all rooms and surfaces',
+      'Post-event clean-up',
+      'Intensive floor care (scrubbing, buffing, or deep mopping)',
+      'Move-in/move-out overlap cleaning',
+      'One-time scheduling, no contract',
+    ],
+    cta: 'Book This Plan',
+    style: 'standard',
+  },
+  {
     name: 'Basic Plan',
     tag: null,
     description: 'Our foundational cleaning package, ideal for maintaining a clean and comfortable environment.',
@@ -16,6 +30,7 @@ const plans = [
       'Surface dusting (desks, counters, shelves)',
       'Restroom sanitization (toilets, sinks, mirrors)',
       'Spot cleaning glass doors and windows',
+      'Dedicated point of contact for your account',
     ],
     cta: 'Book This Plan',
     style: 'standard',
@@ -23,7 +38,7 @@ const plans = [
   {
     name: 'Standard (Tailored) Plan',
     tag: 'Most Popular',
-    description: 'A highly customizable cleaning experience designed around your unique needs — everything in Basic, plus:',
+    description: 'A highly customizable cleaning experience designed around your unique needs.',
     items: [
       'Everything in Basic Plan',
       'Deep cleaning of restrooms including grout scrubbing',
@@ -31,7 +46,6 @@ const plans = [
       'High dusting (ceiling fans, vents, light fixtures)',
       'Disinfection of all high-touch surfaces',
       'Customized cleaning schedule (daily, weekly, bi-weekly)',
-      'Dedicated point of contact for your account',
     ],
     cta: 'Book This Plan',
     style: 'popular',
@@ -39,7 +53,7 @@ const plans = [
   {
     name: 'Premium Plan',
     tag: null,
-    description: 'Our most comprehensive option for businesses that demand excellence — everything in Standard, plus:',
+    description: 'Our most comprehensive option for businesses that demand excellence.',
     items: [
       'Everything in Standard Plan',
       'Medical-grade sanitization available',
@@ -85,34 +99,62 @@ const verticals = [
     image: 'https://images.unsplash.com/photo-1740657254989-42fe9c3b8cce?w=800',
     description: 'Top-to-bottom cleans that satisfy landlords, pass inspections, and prepare spaces for their next chapter.',
   },
+  {
+    title: 'Post Contractor Cleanup',
+    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800',
+    description: 'Detailed post-construction cleaning that removes dust from high and low surfaces, cleans doors, frames, knobs, interior windows, cabinets, bathrooms, and restores floors after residual mud or paint.',
+  },
 ];
+
 ---
 
 <Layout
   title="Commercial Cleaning Services & Plans | Flex Commercial Services"
   description="Explore Basic, Standard, and Premium commercial cleaning plans from Flex Commercial Services. Serving businesses across Northeast Ohio."
+  breadcrumbLabel="Services"
+  additionalSchema={[
+    {
+      "@type": "Service",
+      "@id": "https://flexcommercialservices.com/services/#service",
+      "serviceType": "Commercial Cleaning",
+      "provider": { "@id": "https://flexcommercialservices.com/#business" },
+      "areaServed": "Northeast Ohio",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Commercial Cleaning Plans",
+        "itemListElement": plans.map((plan) => ({
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": plan.name,
+            "description": plan.description,
+          },
+        })),
+      },
+    },
+  ]}
 >
   <Navbar />
 
   <!-- ── PAGE HERO ──────────────────────────────────────────────────────── -->
   <section
     class="pt-36 pb-20 text-center"
-    style="background: linear-gradient(145deg, #0f1827 0%, #1a2744 50%, #0f1827 100%);"
+    style="background: linear-gradient(145deg, #0a0a0a 0%, #141414 50%, #0a0a0a 100%);"
   >
     <div class="max-w-4xl mx-auto px-4">
       <h1 class="animate-on-scroll fade-up text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6 leading-tight">
-        Commercial Cleaning<br />
-        <span class="text-blue-400">Services &amp; Plans</span>
+        Cleveland Commercial Cleaning<br />
+        <span class="text-brand-accent-dark">Services &amp; Plans</span>
       </h1>
       <p class="animate-on-scroll fade-up stagger-1 text-brand-muted text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
         A comprehensive range of cleaning services designed to meet the unique needs of every
-        customer — from routine maintenance to deep-clean transformations.
+        customer, from routine maintenance to deep-clean transformations.
       </p>
     </div>
   </section>
 
   <!-- ── PRICING CARDS ──────────────────────────────────────────────────── -->
-  <section class="py-24 bg-brand-dark">
+  <section id="choose-your-plan" class="py-24 bg-brand-dark">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="text-center mb-16">
@@ -125,21 +167,23 @@ const verticals = [
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
 
         {plans.map((plan, i) => (
           <div
-            class={`pricing-card animate-on-scroll scale-in stagger-${i + 1} rounded-2xl p-8 flex flex-col gap-5 relative ${
+            class={`pricing-card animate-on-scroll scale-in stagger-${i + 1} rounded-2xl p-8 flex flex-col gap-5 relative overflow-visible ${
+              plan.tag ? 'pt-10' : ''
+            } ${
               plan.style === 'popular'
-                ? 'bg-brand-accent border-2 border-blue-400 ring-4 ring-blue-500/20'
+                ? 'bg-brand-accent border-2 border-brand-accent-dark ring-4 ring-brand-accent-dark/20'
                 : plan.style === 'premium'
-                ? 'bg-[#0d1626] border border-[#2a3f6a]'
-                : 'bg-brand-navy border border-[#2a3f6a]'
+                ? 'bg-[#050505] border border-[#2e2e2e]'
+                : 'bg-brand-navy border border-[#2e2e2e]'
             }`}
           >
             {plan.tag && (
-              <div class="absolute -top-4 left-1/2 -translate-x-1/2">
-                <span class="bg-yellow-400 text-yellow-900 text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg">
+              <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-max z-20">
+                <span class="block bg-yellow-400 text-yellow-900 text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">
                   {plan.tag}
                 </span>
               </div>
@@ -147,14 +191,14 @@ const verticals = [
 
             <div>
               <h3 class="text-white font-black text-xl mb-2">{plan.name}</h3>
-              <p class={`text-sm leading-relaxed ${plan.style === 'popular' ? 'text-blue-100' : 'text-brand-muted'}`}>
+              <p class={`text-sm leading-relaxed ${plan.style === 'popular' ? 'text-white/80' : 'text-brand-muted'}`}>
                 {plan.description}
               </p>
             </div>
 
             <ul class="flex flex-col gap-3 flex-grow">
               {plan.items.map(item => (
-                <li class={`flex items-start gap-3 text-sm leading-relaxed ${plan.style === 'popular' ? 'text-blue-50' : 'text-gray-300'}`}>
+                <li class={`flex items-start gap-3 text-sm leading-relaxed ${plan.style === 'popular' ? 'text-white/90' : 'text-gray-300'}`}>
                   <svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
                   </svg>
@@ -167,10 +211,10 @@ const verticals = [
               href="/booking"
               class={`text-center font-bold py-3 px-6 rounded-lg transition-colors duration-200 ${
                 plan.style === 'popular'
-                  ? 'bg-white text-blue-600 hover:bg-blue-50'
+                  ? 'bg-white text-brand-accent-dark hover:bg-red-50'
                   : plan.style === 'premium'
-                  ? 'bg-brand-accent text-white hover:bg-blue-700'
-                  : 'bg-brand-accent text-white hover:bg-blue-700'
+                  ? 'bg-brand-accent text-white hover:bg-brand-accent-dark'
+                  : 'bg-brand-accent text-white hover:bg-brand-accent-dark'
               }`}
             >
               {plan.cta}
@@ -181,7 +225,7 @@ const verticals = [
       </div>
 
       <p class="animate-on-scroll fade-up text-center text-brand-muted text-sm mt-10">
-        Not sure which plan is right for you? <a href="/booking" class="text-blue-400 hover:text-blue-300 font-semibold">Get a free consultation →</a>
+        Not sure which plan is right for you? <a href="/booking" class="text-brand-accent-dark hover:text-brand-accent font-semibold">Get a free consultation →</a>
       </p>
 
     </div>
@@ -202,13 +246,16 @@ const verticals = [
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {verticals.map((v, i) => (
-          <div
-            class={`vertical-card animate-on-scroll scale-in stagger-${(i % 6) + 1} relative rounded-2xl overflow-hidden p-7`}
+          <a
+            href="/booking"
+            class={`vertical-card animate-on-scroll scale-in stagger-${(i % 6) + 1} relative rounded-2xl overflow-hidden p-7 ${v.title === 'Post Contractor Cleanup' ? 'lg:col-start-2' : ''}`}
             style="min-height: 280px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;"
           >
             <img
               src={v.image}
               alt={v.title}
+              width="800"
+              height="533"
               class="absolute inset-0 w-full h-full object-cover object-center"
               style="z-index: 0;"
               loading="lazy"
@@ -217,7 +264,7 @@ const verticals = [
             <!-- Dark navy overlay -->
             <div
               class="absolute inset-0"
-              style="background: rgba(10, 20, 50, 0.75); z-index: 1;"
+              style="background: rgba(0, 0, 0, 0.75); z-index: 1;"
             ></div>
 
             <div
@@ -227,7 +274,7 @@ const verticals = [
               <h3 class="text-white font-black text-2xl md:text-3xl" style="text-align: center;">{v.title}</h3>
               <p class="text-white text-sm leading-relaxed" style="text-align: center; margin-top: 0.75rem;">{v.description}</p>
             </div>
-          </div>
+          </a>
         ))}
       </div>
 
@@ -240,11 +287,11 @@ const verticals = [
       <h2 class="animate-on-scroll fade-up text-3xl md:text-4xl font-black text-white mb-4">
         Get a Custom Quote Today
       </h2>
-      <p class="animate-on-scroll fade-up stagger-1 text-blue-100 mb-8">
-        Call <a href="tel:2168019686" class="font-bold underline underline-offset-4 hover:text-white">(216)-801-9686</a> or fill out our form — we'll respond within 24 hours.
+      <p class="animate-on-scroll fade-up stagger-1 text-white/80 mb-8">
+        Call <a href="tel:2168019686" class="font-bold underline underline-offset-4 hover:text-white">(216)-801-9686</a> or fill out our form, and we'll respond within 24 hours.
       </p>
       <div class="animate-on-scroll fade-up stagger-2 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="/booking" class="bg-white text-blue-600 font-bold px-9 py-4 rounded-lg hover:bg-blue-50 transition-colors">
+        <a href="/booking" class="bg-white text-brand-accent-dark font-bold px-9 py-4 rounded-lg hover:bg-red-50 transition-colors">
           Book a Quote
         </a>
         <a href="/faq" class="btn-outline border-white/70">

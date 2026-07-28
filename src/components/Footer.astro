@@ -1,4 +1,5 @@
 ---
+const currentYear = new Date().getFullYear();
 ---
 
 <footer class="footer-border-animate animate-on-scroll fade-up bg-brand-navy pt-16 pb-8">
@@ -7,13 +8,15 @@
     <!-- Logo centered -->
     <div class="text-center mb-12">
       <img
-        src="https://assets.cdn.filesafe.space/jGKx4eTTbP1enXZEBWxm/media/68124cf13176b90a9f675eb4.png"
+        src="/images/logo.png"
         alt="Flex Commercial Services"
-        class="h-14 w-auto mx-auto mb-4"
+        width="281"
+        height="176"
+        class="h-20 w-auto mx-auto mb-4"
         loading="lazy"
       />
       <p class="text-brand-muted text-sm max-w-md mx-auto">
-        Cleveland's trusted commercial cleaning experts — delivering spotless results across Northeast Ohio.
+        Cleveland's trusted commercial cleaning experts, delivering spotless results across Northeast Ohio.
       </p>
     </div>
 
@@ -36,15 +39,15 @@
       <div class="animate-on-scroll fade-up stagger-2">
         <h3 class="text-white font-bold text-base uppercase tracking-widest mb-5">Contact Us</h3>
         <ul class="space-y-3 text-sm">
-          <li class="text-brand-muted">Cleveland, OH 44101</li>
+          <li class="text-brand-muted">Cleveland, OH 44102</li>
           <li>
             <a href="tel:2168019686" class="text-brand-muted hover:text-white transition-colors duration-200">
               (216)-801-9686
             </a>
           </li>
           <li>
-            <a href="mailto:info@flexcommercialservices.com" class="text-brand-muted hover:text-white transition-colors duration-200 break-all">
-              info@flexcommercialservices.com
+            <a href="mailto:teamflexcommercialservices@gmail.com" class="text-brand-muted hover:text-white transition-colors duration-200 break-all">
+              teamflexcommercialservices@gmail.com
             </a>
           </li>
         </ul>
@@ -71,7 +74,7 @@
     <!-- Bottom bar -->
     <div class="border-t border-white/10 pt-6 text-center">
       <p class="text-brand-muted text-sm">
-        © Flex Commercial Services 2025. All Rights Reserved.
+        © Flex Commercial Services {currentYear}. All Rights Reserved.
       </p>
     </div>
 

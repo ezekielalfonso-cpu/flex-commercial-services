@@ -7,9 +7,10 @@ export default {
     extend: {
       colors: {
         brand: {
-          navy: '#1a2744',
-          accent: '#2563eb',
-          dark: '#0f1827',
+          navy: '#141414',
+          accent: '#E8394A',
+          'accent-dark': '#C41E3A',
+          dark: '#0a0a0a',
           light: '#f1f5f9',
           muted: '#94a3b8',
         }
