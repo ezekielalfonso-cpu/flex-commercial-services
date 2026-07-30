@@ -58,11 +58,10 @@ import ScrollAnimations from '../components/ScrollAnimations.astro';
               id="booking-form"
               name="quote-request"
               method="POST"
-              action="/booking"
+              action="/booking-success"
               data-netlify="true"
               netlify-honeypot="bot-field"
               class="flex flex-col gap-5"
-              novalidate
             >
               <input type="hidden" name="form-name" value="quote-request" />
               <p class="hidden">
@@ -231,20 +230,7 @@ import ScrollAnimations from '../components/ScrollAnimations.astro';
               <p class="text-brand-muted text-xs text-center">
                 By submitting you agree to be contacted by Flex Commercial Services regarding your cleaning inquiry.
               </p>
-
-              <p id="form-error" class="hidden text-sm text-red-300 bg-red-500/10 border border-red-500/30 rounded-lg px-4 py-3"></p>
             </form>
-
-            <!-- Success message (hidden by default) -->
-            <div id="form-success" class="hidden text-center py-10">
-              <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-green-400/10 flex items-center justify-center">
-                <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <h3 class="text-white font-bold text-xl mb-2">Request Sent!</h3>
-              <p class="text-brand-muted text-sm">We'll be in touch within 24 hours with your personalized quote.</p>
-            </div>
           </div>
         </div>
 
@@ -326,10 +312,6 @@ import ScrollAnimations from '../components/ScrollAnimations.astro';
 </Layout>
 
 <script>
-  const form = document.getElementById('booking-form') as HTMLFormElement | null;
-  const successMsg = document.getElementById('form-success');
-  const errorMsg = document.getElementById('form-error');
-  const submitButton = form?.querySelector('button[type="submit"]') as HTMLButtonElement | null;
   const serviceType = document.getElementById('service-type') as HTMLSelectElement | null;
   const serviceTypeOtherWrap = document.getElementById('service-type-other-wrap');
   const serviceTypeOther = document.getElementById('service-type-other') as HTMLInputElement | null;
@@ -362,55 +344,4 @@ import ScrollAnimations from '../components/ScrollAnimations.astro';
 
   cleaningFrequency?.addEventListener('change', toggleCleaningFrequencyOther);
   toggleCleaningFrequencyOther();
-
-  const encodeFormData = (formData: FormData) =>
-    new URLSearchParams(formData as unknown as Record<string, string>).toString();
-
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      return;
-    }
-
-    if (errorMsg) {
-      errorMsg.textContent = '';
-      errorMsg.classList.add('hidden');
-    }
-
-    const originalButtonText = submitButton?.textContent || 'Send My Free Quote Request';
-
-    if (submitButton) {
-      submitButton.disabled = true;
-      submitButton.textContent = 'Sending...';
-    }
-
-    try {
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: encodeFormData(new FormData(form)),
-      });
-
-      if (!response.ok) {
-        throw new Error('Something went wrong. Please try again.');
-      }
-
-      form.style.display = 'none';
-      if (successMsg) successMsg.classList.remove('hidden');
-    } catch (error) {
-      if (errorMsg) {
-        errorMsg.textContent = error instanceof Error ? error.message : 'Something went wrong. Please try again.';
-        errorMsg.classList.remove('hidden');
-      }
-    } finally {
-      if (submitButton) {
-        submitButton.disabled = false;
-        submitButton.textContent = originalButtonText;
-      }
-    }
-  });
 </script>

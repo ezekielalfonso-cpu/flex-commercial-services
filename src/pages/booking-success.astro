@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import ScrollAnimations from '../components/ScrollAnimations.astro';
+---
+
+<Layout
+  title="Quote Request Sent | Flex Commercial Services"
+  description="Your commercial cleaning quote request has been sent to Flex Commercial Services."
+  breadcrumbLabel="Quote Request Sent"
+>
+  <Navbar />
+
+  <section
+    class="min-h-[70vh] pt-36 pb-20 flex items-center bg-brand-dark"
+  >
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-green-400/10 flex items-center justify-center">
+        <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <h1 class="animate-on-scroll fade-up text-4xl sm:text-5xl font-black text-white mb-5 leading-tight">
+        Request Sent
+      </h1>
+      <p class="animate-on-scroll fade-up stagger-1 text-brand-muted text-lg leading-relaxed mb-8">
+        Thank you for reaching out. Flex Commercial Services will respond within 24 hours with next steps for your quote.
+      </p>
+      <a href="/" class="btn-primary inline-flex justify-center rounded-lg px-8 py-4 text-base font-bold">
+        Back to Home
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+  <ScrollAnimations />
+</Layout>
