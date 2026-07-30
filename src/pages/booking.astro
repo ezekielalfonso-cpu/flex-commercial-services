@@ -171,6 +171,17 @@ import ScrollAnimations from '../components/ScrollAnimations.astro';
                 </div>
               </div>
 
+              <div id="service-type-other-wrap" class="hidden">
+                <label for="service-type-other" class="block text-sm font-medium text-gray-300 mb-1.5">Company Type Details *</label>
+                <input
+                  type="text"
+                  id="service-type-other"
+                  name="service_type_other"
+                  class="w-full bg-[#1A1A1A] border border-[#2e2e2e] rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-colors text-sm"
+                  placeholder="Tell us what type of company or facility this is..."
+                />
+              </div>
+
               <div>
                 <label for="cleaning-frequency" class="block text-sm font-medium text-gray-300 mb-1.5">How often would you like your facility cleaned?</label>
                 <select
@@ -319,9 +330,22 @@ import ScrollAnimations from '../components/ScrollAnimations.astro';
   const successMsg = document.getElementById('form-success');
   const errorMsg = document.getElementById('form-error');
   const submitButton = form?.querySelector('button[type="submit"]') as HTMLButtonElement | null;
+  const serviceType = document.getElementById('service-type') as HTMLSelectElement | null;
+  const serviceTypeOtherWrap = document.getElementById('service-type-other-wrap');
+  const serviceTypeOther = document.getElementById('service-type-other') as HTMLInputElement | null;
   const cleaningFrequency = document.getElementById('cleaning-frequency') as HTMLSelectElement | null;
   const cleaningFrequencyOtherWrap = document.getElementById('cleaning-frequency-other-wrap');
   const cleaningFrequencyOther = document.getElementById('cleaning-frequency-other') as HTMLInputElement | null;
+
+  const toggleServiceTypeOther = () => {
+    const isOther = serviceType?.value === 'other';
+    serviceTypeOtherWrap?.classList.toggle('hidden', !isOther);
+
+    if (serviceTypeOther) {
+      serviceTypeOther.required = isOther;
+      if (!isOther) serviceTypeOther.value = '';
+    }
+  };
 
   const toggleCleaningFrequencyOther = () => {
     const isOther = cleaningFrequency?.value === 'other';
@@ -332,6 +356,9 @@ import ScrollAnimations from '../components/ScrollAnimations.astro';
       if (!isOther) cleaningFrequencyOther.value = '';
     }
   };
+
+  serviceType?.addEventListener('change', toggleServiceTypeOther);
+  toggleServiceTypeOther();
 
   cleaningFrequency?.addEventListener('change', toggleCleaningFrequencyOther);
   toggleCleaningFrequencyOther();
