@@ -56,9 +56,22 @@ import ScrollAnimations from '../components/ScrollAnimations.astro';
 
             <form
               id="booking-form"
+              name="quote-request"
+              method="POST"
+              action="/booking"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
               class="flex flex-col gap-5"
               novalidate
             >
+              <input type="hidden" name="form-name" value="quote-request" />
+              <p class="hidden">
+                <label>
+                  Don't fill this out if you're human:
+                  <input name="bot-field" />
+                </label>
+              </p>
+
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label for="first-name" class="block text-sm font-medium text-gray-300 mb-1.5">First Name *</label>
@@ -195,27 +208,6 @@ import ScrollAnimations from '../components/ScrollAnimations.astro';
                   class="w-full bg-[#1A1A1A] border border-[#2e2e2e] rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-colors text-sm resize-none"
                   placeholder="Frequency, special requirements, areas of focus..."
                 ></textarea>
-              </div>
-
-              <!--
-                NOTE: `square_footage` and `space_photos` are new fields. The form
-                submission handler below is still a placeholder (see TODO), and once
-                this is wired up to the real GoHighLevel embed, these two fields will
-                need to be mapped to their corresponding GHL custom field IDs.
-                Not guessing those IDs here — set them when the embed is configured.
-              -->
-              <div>
-                <label for="space-photos" class="block text-sm font-medium text-gray-300 mb-1.5">
-                  Upload Photos of the Space <span class="text-brand-muted font-normal">(optional, up to 5 images, 5 MB each)</span>
-                </label>
-                <input
-                  type="file"
-                  id="space-photos"
-                  name="space_photos"
-                  accept="image/*"
-                  multiple
-                  class="w-full bg-[#1A1A1A] border border-[#2e2e2e] rounded-lg px-4 py-3 text-white text-sm cursor-pointer file:mr-4 file:py-1.5 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-brand-accent file:text-white hover:file:bg-brand-accent-dark file:cursor-pointer focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-colors"
-                />
               </div>
 
               <button
@@ -365,15 +357,13 @@ import ScrollAnimations from '../components/ScrollAnimations.astro';
     }
 
     try {
-      const response = await fetch('/.netlify/functions/booking', {
+      const response = await fetch(form.action, {
         method: 'POST',
         body: new FormData(form),
       });
 
-      const result = await response.json().catch(() => ({}));
-
-      if (!response.ok || !result.ok) {
-        throw new Error(result.error || 'Something went wrong. Please try again.');
+      if (!response.ok) {
+        throw new Error('Something went wrong. Please try again.');
       }
 
       form.style.display = 'none';
