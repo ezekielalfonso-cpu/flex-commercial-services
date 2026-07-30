@@ -36,3 +36,22 @@ import ScrollAnimations from '../components/ScrollAnimations.astro';
   <Footer />
   <ScrollAnimations />
 </Layout>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+
+  if (params.get('submitted') === '1') {
+    const body = JSON.stringify({ event: 'success' });
+
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon('/.netlify/functions/booking-events', new Blob([body], { type: 'application/json' }));
+    } else {
+      fetch('/.netlify/functions/booking-events', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body,
+        keepalive: true,
+      }).catch(() => {});
+    }
+  }
+</script>

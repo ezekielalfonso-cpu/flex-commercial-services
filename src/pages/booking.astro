@@ -58,7 +58,7 @@ import ScrollAnimations from '../components/ScrollAnimations.astro';
               id="booking-form"
               name="quote-request"
               method="POST"
-              action="/booking-success"
+              action="/booking-success?submitted=1"
               data-netlify="true"
               netlify-honeypot="bot-field"
               class="flex flex-col gap-5"
@@ -312,6 +312,7 @@ import ScrollAnimations from '../components/ScrollAnimations.astro';
 </Layout>
 
 <script>
+  const bookingForm = document.getElementById('booking-form') as HTMLFormElement | null;
   const serviceType = document.getElementById('service-type') as HTMLSelectElement | null;
   const serviceTypeOtherWrap = document.getElementById('service-type-other-wrap');
   const serviceTypeOther = document.getElementById('service-type-other') as HTMLInputElement | null;
@@ -344,4 +345,26 @@ import ScrollAnimations from '../components/ScrollAnimations.astro';
 
   cleaningFrequency?.addEventListener('change', toggleCleaningFrequencyOther);
   toggleCleaningFrequencyOther();
+
+  const trackBookingEvent = (eventName: string) => {
+    const body = JSON.stringify({ event: eventName });
+
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon('/.netlify/functions/booking-events', new Blob([body], { type: 'application/json' }));
+      return;
+    }
+
+    fetch('/.netlify/functions/booking-events', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body,
+      keepalive: true,
+    }).catch(() => {});
+  };
+
+  bookingForm?.addEventListener('submit', () => {
+    if (bookingForm.checkValidity()) {
+      trackBookingEvent('attempt');
+    }
+  });
 </script>
