@@ -1,4 +1,4 @@
-import { getStore } from '@netlify/blobs';
+import { getBookingStore } from './booking-store.js';
 
 const allowedEvents = new Set(['attempt', 'success']);
 
@@ -31,7 +31,7 @@ export const handler = async (event) => {
     return json(400, { error: 'Invalid booking event.' });
   }
 
-  const store = getStore('booking-submission-events');
+  const store = getBookingStore();
   const timestamp = new Date().toISOString();
   const key = `${eventName}/${timestamp}-${crypto.randomUUID()}.json`;
 

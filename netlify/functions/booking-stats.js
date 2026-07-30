@@ -1,4 +1,4 @@
-import { getStore } from '@netlify/blobs';
+import { getBookingStore } from './booking-store.js';
 
 const json = (statusCode, body) => ({
   statusCode,
@@ -30,7 +30,7 @@ export const handler = async (event) => {
     return json(401, { error: 'Unauthorized' });
   }
 
-  const store = getStore('booking-submission-events');
+  const store = getBookingStore();
   const attempts = await countPrefix(store, 'attempt/');
   const successes = await countPrefix(store, 'success/');
 
